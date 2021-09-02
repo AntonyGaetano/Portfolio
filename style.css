@@ -1,19 +1,29 @@
 *{padding:0; margin: 0; box-sizing: border-box;}
 
 .cabecalho{
-padding: 1rem;
-width: 70%;
-margin: auto;
-background-color: black;
-color:white;
+  height:50px;
+  width: 70%;
+  margin: auto;
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content:left;
+  align-items: center;
 }
 
 ul{
-  display: flex;
+   display: flex;
+   gap:2rem;
+   margin-left: 1.5rem;
 }
 
 li{
- display: inline-block;
+   display: inline-block;
+   font-size: 1.1rem;
+}
+
+li:hover{
+   text-decoration: underline white;
 }
 
 .header-container{
