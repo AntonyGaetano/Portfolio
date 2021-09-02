@@ -1,6 +1,7 @@
 *{padding:0; margin: 0; box-sizing: border-box;}
 
 .cabecalho{
+padding: 1rem;
 width: 70%;
 margin: auto;
 background-color: black;
@@ -17,7 +18,7 @@ li{
 
 .header-container{
    width: 70%;
-   margin:1rem auto; 
+   margin: auto; 
    background-color: rgb(127, 172, 255);
    display: flex;
    justify-content: space-evenly;
