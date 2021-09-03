@@ -2,24 +2,24 @@
 
 
 .cabecalho{
-  height:50px;
+  height:80px;
   margin: auto;
   background-color: rgb(127, 172, 255);
   color:white;
   display: flex;
-  justify-content:left;
+  justify-content:right;
   align-items: center;
 }
 
 ul{
    display: flex;
    gap:2rem;
-   margin-left: 1.5rem;
+   margin-right: 4rem;
 }
 
 li{
    display: inline-block;
-   font-size: 1rem;
+   font-size: 1.3rem;
    font-family: Courier, monospace;
    text-transform:uppercase;
    color:black;
@@ -27,6 +27,7 @@ li{
 
 li:hover{
    color:white;
+   cursor: pointer;
 }
 
 .header-container{
@@ -34,7 +35,7 @@ li:hover{
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   padding: 2rem 0;
+   padding: 4rem 0;
 }
 
 
@@ -43,7 +44,7 @@ li:hover{
    font-size: 2.4rem;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin:4rem 0;
-   font-weight:500;
+   font-weight:700;
 }
 
 
@@ -51,14 +52,14 @@ li:hover{
     text-transform: uppercase;
     font-size: 1.8rem;
     letter-spacing:2.5px;
-    margin:4rem 0;
+    margin:2.6rem 0;
 }
 
 
 #box-img{
     border:1px solid;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -68,7 +69,7 @@ li:hover{
 
 
 #box-img > img{
-    width: 190px;
+    width: 200px;
 }
 
 
@@ -78,7 +79,7 @@ li:hover{
 
 
 button{
-   width: 6.5rem;
+   width: 7.5rem;
    height: 3rem;
    background-color: transparent;
    border: 1px solid;
