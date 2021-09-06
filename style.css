@@ -122,12 +122,25 @@ a{
 }
 
 .box-main > div{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: 1px solid;
-    border-radius: 50%;
     text-align: center;
     background-color: transparent;
     padding-top: 5rem;
+   
 }
 
+#projeto1{
+    background-image: url(/fotos_projetos/listaDeTarefas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#p{
+    visibility: hidden;
+    cursor: pointer;
+    color:white;
+    font-size: 22px;
+}
