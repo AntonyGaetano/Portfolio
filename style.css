@@ -122,7 +122,10 @@ a{
     padding: 4rem 3rem;  
 }
 
-
+#projeto2, #projeto4{
+    display: flex;
+    justify-content:right;
+}
 
 
 
