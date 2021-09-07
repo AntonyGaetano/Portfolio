@@ -122,6 +122,13 @@ a{
     padding: 4rem 3rem;  
 }
 
+
+#projeto1, #projeto3{
+    display: flex;
+    justify-content:left;
+    background-color: rgb(127, 178, 255);
+}
+
 #projeto2, #projeto4{
     display: flex;
     justify-content:right;
