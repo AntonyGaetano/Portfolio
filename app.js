@@ -1,4 +1,4 @@
-
+/*
 const MouseOver=()=>{
    var tag = document.getElementById('p')
    tag.style.visibility="visible"
@@ -11,4 +11,4 @@ const MouseOut=()=>{
 
 document.getElementById("projeto1").addEventListener('mouseover',MouseOver);
 
-document.getElementById("projeto1").addEventListener('mouseout',MouseOut);
+document.getElementById("projeto1").addEventListener('mouseout',MouseOut); */
