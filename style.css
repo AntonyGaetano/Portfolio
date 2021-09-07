@@ -117,11 +117,12 @@ a{
 
 .box-main{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     border: 1px solid black;
-    padding: 4rem 0;
+    padding: 4rem 3rem;  
 }
+
+
 
 
 
