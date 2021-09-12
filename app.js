@@ -13,7 +13,7 @@ document.getElementById('box-header').addEventListener('click', ReverseBox1);
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
     box.style.height="60px";   
-    tmp = setTimeout(ADD_i,1500)
+    tmp = setTimeout(ADD_i,900)
 }
 
 //Função para fazer o icone da seta ficar visível

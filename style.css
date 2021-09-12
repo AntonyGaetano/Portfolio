@@ -7,13 +7,10 @@ background-color: white;
 #box1{
 width: 100%;
 height: 657px;
-border: 1px solid;
 transition: height 1s ease-in-out;
-background-color: rgb(76, 150, 247);
+background-color:rgb(76, 150, 247);
 overflow: hidden;
 }
-
-
 
 .main-img{
 width: 270px;
@@ -32,7 +29,7 @@ width: 150px;
 height: 270px;
 }
 
-#main{
+#main1{
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -40,32 +37,64 @@ text-align: center;
 align-items: center;
 }
 
-#main > h2{
+#main1 > h2{
 font-size: 3rem;
 margin:0.5rem 0;
 }
 
-#main > h4{
+#main1 > h4{
     font-size: 1.6rem;
     margin:0.5rem 0;
 }
 
-#btn-ver-projeto{
-    margin: 0.8rem 0;
-    padding: 0.8rem;
-    font-size: 0.8rem;
+.middle{
+ z-index: 1;
+ cursor: pointer;
+}
+
+.btn{
+    width: max-content;
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid black;
+    padding: 1rem 1.4rem;
     text-transform: uppercase;
-    background-color:transparent;
-    border: 1px solid black;
-    border-radius: 4px;
-    transition: 0.2s linear ;
+    overflow: hidden;
+    transition: 1s all ease;
 }
 
-#btn-ver-projeto:hover{
+.btn::before{
+    background: black;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn:hover{
     color:white;
-    background-color: black;
 }
 
+.btn::before{
+    width: 0%;
+    height: 100%;
+}
+
+.btn:hover::before{
+    width: 100%;
+    color:white;
+}
+   
+
+ 
 #header{
   width: 100%;
   height: 5rem;
@@ -78,6 +107,17 @@ margin:0.5rem 0;
 i{
     transform: scale(2);
     pointer-events: all;
+    cursor: pointer;
+}
+
+#i_menu{
+    color:black;
+    transition: 0.5s;
+  }
+
+#i_menu:hover{
+    color:white;
+    cursor: pointer;
 }
 
 #icone_seta{
@@ -91,6 +131,58 @@ i{
     cursor: pointer;
 }
 
+#box2{
+    width: 100%;
+    height: 597px;
+    border: 1px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#main2{
+    border:1px solid;
+    width: 85%;
+    height: 370px;
+    display: flex;
+    overflow: hidden;
+}
+
+.bloco{
+    border: 1px solid;
+    width: 130px;
+  
+}
+
+  
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+    
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+  
 
 
 
