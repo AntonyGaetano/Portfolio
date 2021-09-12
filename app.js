@@ -4,6 +4,7 @@ var box2 = document.getElementById('box2');
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var header = document.getElementById("header");
+var bloco = document.querySelectorAll("div.bloco");
 
 //Chama de funções
 document.getElementById('btn-ver-projeto').addEventListener("click",Box1)
@@ -34,4 +35,26 @@ function ReverseBox1(event){
     header.style.justifyContent="right";
     box2.style.display="none";
   }
+}
+
+function Animacao(props){
+
+  if(props == 'Passar'){
+    for(let i = 0; i < bloco.length; i++){
+     bloco[i].style.animation="BlocoPassar 0.6s 1";
+    }
+    tempo = setTimeout(tirarA,1200)
+  }
+  else if(props == 'Voltar'){
+    for(let i = 0; i < bloco.length; i++){
+    bloco[i].style.animation="BlocoVoltar 0.6s 1";
+    }
+    tempo = setTimeout(TirarAnimacao,1200)
+  }
+}
+
+function TirarAnimacao(){
+  for(let i = 0; i < bloco.length; i++){
+    bloco[i].style.animation="none";
+   }
 }
