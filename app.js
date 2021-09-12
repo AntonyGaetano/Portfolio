@@ -1,5 +1,6 @@
 
-var box = document.getElementById('box1');
+var box1 = document.getElementById('box1');
+var box2 = document.getElementById('box2');
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var header = document.getElementById("header");
@@ -12,7 +13,7 @@ document.getElementById('box-header').addEventListener('click', ReverseBox1);
 
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
-    box.style.height="60px";   
+    box1.style.height="60px";   
     tmp = setTimeout(ADD_i,900)
 }
 
@@ -21,14 +22,16 @@ function ADD_i(){
 header.style.justifyContent="center";
 icone_menu.style.display="none";
 icone_arrow.style.display="inline-block";
+box2.style.display="flex"
 }
 
 //Função para fazer a transição do Box, após o clique no botão
 function ReverseBox1(event){
   if(event.target.id == 'icone_seta'){
-    box.style.height="657px";
+    box1.style.height="657px";
     icone_arrow.style.display='none';
     icone_menu.style.display="inline-block";
     header.style.justifyContent="right";
+    box2.style.display="none";
   }
 }
