@@ -154,11 +154,23 @@ i{
     display: flex;
     flex-direction: column;
     width: 270px;
+    overflow: hidden;
 }
 
 .bloco-com-img{
     width:270px;
-    
+    height: 150px;
+    background-color:rgb(76, 150, 247);
+    border: 1px solid;
+}
+
+.bloco-descricao{
+padding: 1rem;
+}
+
+.bloco-descricao > h4,.bloco-descricao > h5,.bloco-descricao > ul{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 0.8rem 0;
 }
 
   
