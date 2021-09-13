@@ -25,7 +25,7 @@ header.style.justifyContent="center";
 icone_menu.style.display="none";
 icone_arrow.style.display="inline-block";
 box2.style.display="flex"
-Add()
+Add(0)
 }
 
 //Função para fazer a transição do Box, após o clique no botão
@@ -45,7 +45,7 @@ function Animacao(props){
     for(let i = 0; i < bloco.length; i++){
      bloco[i].style.animation="BlocoPassar 0.6s 1";
     }
-    Add();
+    Add(0);
     tempo = setTimeout(tirarA,1200)
 
   }
