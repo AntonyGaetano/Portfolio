@@ -157,7 +157,6 @@ i{
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-
     align-content: space-between;
     
 }
@@ -166,16 +165,25 @@ i{
    margin-top: 90px;
 }
 
-
-
 .blocos > div{
     width: 100%;
     height: 260px;
     border: 1px solid;
 }
 
+.blocos2{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; 
+}
 
-
+.blocos2 > div{
+    width: 100%;
+    height: 260px;
+    border: 1px solid;
+}
 
   
 .fadeIn {
@@ -185,6 +193,18 @@ i{
     animation: fadeIn 1s ease-in-out;
 }
 
+#bloco1{
+    overflow: hidden-y;
+}
+
+#bloco1>img{
+    width: 398px;
+    height: 260px;
+    border: 1px solid;
+    
+}
+
+/* ANIMAÇÃO */
 @-webkit-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; } 
