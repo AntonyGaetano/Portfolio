@@ -3,14 +3,14 @@ var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
-var header = document.getElementById("header");
+var boxheader = document.getElementById('box-header')
 var bloco = document.querySelectorAll("div.bloco");
 
 //Chama de funções
 document.getElementById('btn-ver-projeto').addEventListener("click",Box1)
 
 
-document.getElementById('box-header').addEventListener('click', ReverseBox1); 
+boxheader.addEventListener('click', ReverseBox1); 
 
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
@@ -21,7 +21,7 @@ function Box1(){
 
 //Função para fazer o icone da seta ficar visível
 function ADD_i(){
-header.style.justifyContent="center";
+boxheader.style.justifyContent="center";
 icone_menu.style.display="none";
 icone_arrow.style.display="inline-block";
 box2.style.display="flex"
@@ -34,7 +34,7 @@ function ReverseBox1(event){
     box1.style.height="657px";
     icone_arrow.style.display='none';
     icone_menu.style.display="inline-block";
-    header.style.justifyContent="right";
+    boxheader.style.justifyContent="right";
     box2.style.display="none";
   }
 }
