@@ -21,7 +21,7 @@ boxheader.addEventListener('click', ReverseBox1);
 
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
-    box1.style.height="60px";   
+    box1.style.height="50px";   
     tmp = setTimeout(ADD_i,900)
  
 }
@@ -76,6 +76,7 @@ function Menu(){
   if(cont == 0){
   ul.style.display="flex";
   header.style.height="12rem";
+  header.style.backgroundColor="#ccc"
   icone_menu.innerHTML="close";
   main.style.opacity=0.3
   cont = 1;
@@ -84,6 +85,7 @@ function Menu(){
     ul.style.display="none";
     header.style.height="3rem";
     icone_menu.innerHTML="menu";
+    header.style.backgroundColor=""
     main.style.opacity=1;
     cont = 0;
   }
