@@ -14,7 +14,7 @@ var header = document.getElementById("header");
 icone_menu.addEventListener('click',Menu);
 
 //Chama de funções
-document.getElementById('btn-ver-projeto').addEventListener("click",Box1)
+document.getElementById('btn-ver-projeto').addEventListener("click",Box1);
 
 
 boxheader.addEventListener('click', ReverseBox1); 
@@ -22,7 +22,7 @@ boxheader.addEventListener('click', ReverseBox1);
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
     box1.style.height="50px";   
-    tmp = setTimeout(ADD_i,900)
+    tmp = setTimeout(ADD_i,900);
  
 }
 
@@ -31,7 +31,7 @@ function ADD_i(){
 boxheader.style.justifyContent="center";
 icone_menu.style.display="none";
 icone_arrow.style.display="inline-block";
-box2.style.display="flex"
+box2.style.display="flex";
 
 }
 
@@ -53,7 +53,7 @@ function Animacao(props){
      bloco[i].style.animation="BlocoPassar 0.6s 1";
     }
  
-    tempo = setTimeout(tirarA,1200)
+    tempo = setTimeout(tirarA,1200);
 
   }
   else if(props == 'Voltar'){
@@ -61,7 +61,7 @@ function Animacao(props){
     bloco[i].style.animation="BlocoVoltar 0.6s 1";
     }
 
-    tempo = setTimeout(TirarAnimacao,1200)
+    tempo = setTimeout(TirarAnimacao,1200);
   }
 }
 
@@ -76,16 +76,16 @@ function Menu(){
   if(cont == 0){
   ul.style.display="flex";
   header.style.height="12rem";
-  header.style.backgroundColor="#ccc"
+  header.style.backgroundColor="#ccc";
   icone_menu.innerHTML="close";
-  main.style.opacity=0.3
+  main.style.opacity=0.3;
   cont = 1;
   }
   else{
     ul.style.display="none";
     header.style.height="3rem";
     icone_menu.innerHTML="menu";
-    header.style.backgroundColor=""
+    header.style.backgroundColor="";
     main.style.opacity=1;
     cont = 0;
   }
