@@ -25,10 +25,7 @@ border-radius: 50%;
 margin:1rem 0;
 }
 
-img{
-width: 150px;
-height: 270px;
-}
+
 
 #main1{
 display: flex;
@@ -141,8 +138,12 @@ i{
     transform: scale(2);
     pointer-events: all;
     cursor: pointer;
-   
 }
+
+.teste{ 
+width:430px;
+height: 270px;
+  }
 
 #i_menu{
     color:black;
@@ -184,6 +185,12 @@ i{
     justify-content: space-between;
  
 }
+#bloco1, #bloco3{
+    overflow: hidden;
+    
+}
+
+
 
 .blocos{
     width: 400px;
