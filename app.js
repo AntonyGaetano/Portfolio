@@ -3,8 +3,14 @@ var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
+var icone_menu = document.getElementById('i_menu');
 var boxheader = document.getElementById('box-header')
 var bloco = document.querySelectorAll("div.bloco");
+var ul = document.getElementById('ul');
+var header = document.getElementById("header");
+
+
+icone_menu.addEventListener('click',Menu);
 
 //Chama de funções
 document.getElementById('btn-ver-projeto').addEventListener("click",Box1)
@@ -62,6 +68,21 @@ function TirarAnimacao(){
   for(let i = 0; i < bloco.length; i++){
     bloco[i].style.animation="none";
    }
+}
+
+var cont = 0
+function Menu(){
+  if(cont == 0){
+  ul.style.display="flex";
+  header.style.height="12rem";
+  icone_menu.innerHTML="close";
+  cont = 1;
+  }
+  else{
+    ul.style.display="none";
+    header.style.height="3";
+    icone_menu.innerHTML="arrow_drop_down";
+  }
 }
 
 
