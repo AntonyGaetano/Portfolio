@@ -1,6 +1,7 @@
 
 var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
+var main = document.getElementById('main1')
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var icone_menu = document.getElementById('i_menu');
@@ -76,12 +77,15 @@ function Menu(){
   ul.style.display="flex";
   header.style.height="12rem";
   icone_menu.innerHTML="close";
+  main.style.opacity=0.3
   cont = 1;
   }
   else{
     ul.style.display="none";
-    header.style.height="3";
-    icone_menu.innerHTML="arrow_drop_down";
+    header.style.height="3rem";
+    icone_menu.innerHTML="menu";
+    main.style.opacity=1;
+    cont = 0;
   }
 }
 
