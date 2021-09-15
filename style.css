@@ -118,22 +118,30 @@ margin:0.5rem 0;
     justify-content: center;
     text-align: center;
     width: 40%;
+    gap:1rem;
 }
 
 li{
 font-size: 2rem;
 list-style: none;
+transition: width 2s;
+border-width: 0px;
+width: max-content;
+margin: auto;
 }
 
 li:hover{
     cursor: pointer;
     color:white;
+    border-bottom: 1px solid black;
+    border-width: 3px;
 }
 
 i{
     transform: scale(2);
     pointer-events: all;
     cursor: pointer;
+   
 }
 
 #i_menu{

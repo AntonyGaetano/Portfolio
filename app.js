@@ -76,7 +76,7 @@ function Menu(){
   if(cont == 0){
   ul.style.display="flex";
   header.style.height="12rem";
-  header.style.backgroundColor="#ccc";
+  header.style.backgroundColor="cornflowerblue";
   icone_menu.innerHTML="close";
   main.style.opacity=0.3;
   cont = 1;
