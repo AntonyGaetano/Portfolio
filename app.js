@@ -46,11 +46,15 @@ function ReverseBox1(event){
     box2.style.display="none";
   }
 }
+
+//Criação do objeto com as informações do projeto1
 var bloco1 = {
   num_projeto:1,
-  nome_projeto:"",
-  idade:21,
-  cidade:"Umari" 
+  nome_projeto:"Calculado De IMC",
+  descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporar!",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
 }
 
 var cont = 0
