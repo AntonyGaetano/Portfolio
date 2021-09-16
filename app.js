@@ -12,7 +12,8 @@ var header = document.getElementById("header");
 
 function inicia(){
 for(let j = 0; j < blocos.length; j++){
-  blocos[j].addEventListener('click',opacity);
+  blocos[j].addEventListener('mouseover',opacity);
+  blocos[j].addEventListener('mouseout',desopacity);
 }
 }
 
@@ -78,6 +79,10 @@ function Menu(){
 }
 
 function opacity(event){
- alert(event.target.id)
+  console.log(event.target.id + ":" + "Entrou")
 }
+
+function desopacity(event){
+  console.log(event.target.id + ":" + "Saiu")
+ }
 
