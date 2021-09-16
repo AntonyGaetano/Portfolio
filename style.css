@@ -274,7 +274,21 @@ i{
 }
 
 #bloco1{
-    background-image: url(/fotos_projetos/projeto4.png);
+    background-image: url(/fotos_projetos/projeto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bloco3{
+    background-image: url(/fotos_projetos/projeto2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bloco5{
+    background-image: url(/fotos_projetos/projeto3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
