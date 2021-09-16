@@ -2,11 +2,11 @@
 var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
 var main = document.getElementById('main1')
+var blocos = document.querySelectorAll("div.bloco");
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var icone_menu = document.getElementById('i_menu');
 var boxheader = document.getElementById('box-header')
-var bloco = document.querySelectorAll("div.bloco");
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
@@ -19,11 +19,12 @@ document.getElementById('btn-ver-projeto').addEventListener("click",Box1);
 
 boxheader.addEventListener('click', ReverseBox1); 
 
+
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
     box1.style.height="50px";   
     tmp = setTimeout(ADD_i,900);
- 
+
 }
 
 //Função para fazer o icone da seta ficar visível
@@ -32,7 +33,6 @@ boxheader.style.justifyContent="center";
 icone_menu.style.display="none";
 icone_arrow.style.display="inline-block";
 box2.style.display="flex";
-
 }
 
 //Função para fazer a transição do Box, após o clique no botão
@@ -46,30 +46,6 @@ function ReverseBox1(event){
   }
 }
 
-function Animacao(props){
-
-  if(props == 'Passar'){
-    for(let i = 0; i < bloco.length; i++){
-     bloco[i].style.animation="BlocoPassar 0.6s 1";
-    }
- 
-    tempo = setTimeout(tirarA,1200);
-
-  }
-  else if(props == 'Voltar'){
-    for(let i = 0; i < bloco.length; i++){
-    bloco[i].style.animation="BlocoVoltar 0.6s 1";
-    }
-
-    tempo = setTimeout(TirarAnimacao,1200);
-  }
-}
-
-function TirarAnimacao(){
-  for(let i = 0; i < bloco.length; i++){
-    bloco[i].style.animation="none";
-   }
-}
 
 var cont = 0
 function Menu(){
@@ -93,5 +69,7 @@ function Menu(){
   }
 }
 
-
+function opacity(event){
+ alert(event.target.id)
+}
 
