@@ -2,7 +2,6 @@
 var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
 var main = document.getElementById('main1')
-var blocos = document.querySelectorAll("div.blocos");
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var icone_menu = document.getElementById('i_menu');
@@ -10,14 +9,7 @@ var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
-function inicia(){
-for(let j = 0; j < blocos.length; j++){
-  blocos[j].addEventListener('mouseover',opacity);
-  blocos[j].addEventListener('mouseout',desopacity);
-}
-}
 
-window.addEventListener("load", inicia);
 
 
 icone_menu.addEventListener('click',Menu);
@@ -54,10 +46,17 @@ function ReverseBox1(event){
     box2.style.display="none";
   }
 }
-
+var bloco1 = {
+  num_projeto:1,
+  nome_projeto:"",
+  idade:21,
+  cidade:"Umari" 
+}
 
 var cont = 0
 function Menu(){
+  console.log(info.nome)
+
   if(cont == 0){
   ul.style.display="flex";
   header.style.height="12rem";
@@ -78,12 +77,10 @@ function Menu(){
   }
 }
 
-var Descricao;
-
-Descricao = document.getElementById("bloco1-div-info");
 
 
 
+/*
 function opacity(event){
 
   Descricao = document.getElementById("bloco1-div-info");
@@ -96,5 +93,5 @@ function opacity(event){
 function desopacity(event){
 
   (event.target.id == "bloco1"? Descricao.style.display="none" : "")
- }
+ }  */
 
