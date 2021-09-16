@@ -78,11 +78,23 @@ function Menu(){
   }
 }
 
+var Descricao;
+
+Descricao = document.getElementById("bloco1-div-info");
+
+
+
 function opacity(event){
-  console.log(event.target.id + ":" + "Entrou")
+
+  Descricao = document.getElementById("bloco1-div-info");
+
+  (event.target.id == "bloco1"? Descricao.style.display="block" : "")
+  
+ 
 }
 
 function desopacity(event){
-  console.log(event.target.id + ":" + "Saiu")
+
+  (event.target.id == "bloco1"? Descricao.style.display="none" : "")
  }
 

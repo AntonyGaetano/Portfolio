@@ -289,6 +289,8 @@ i{
     background-color: rgb(202, 199, 199);
     text-align: center;
     padding: 0.5rem;
+    display: none;
+    transition: 2s all;
 }
 
 .div-info-pro > p,  .div-info-pro > h4{
