@@ -273,7 +273,11 @@ i{
     }
 }
 
-  
-
+#bloco1{
+    background-image: url(/fotos_projetos/projeto4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
