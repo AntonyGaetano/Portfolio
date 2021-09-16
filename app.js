@@ -2,13 +2,21 @@
 var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
 var main = document.getElementById('main1')
-var blocos = document.querySelectorAll("div.bloco");
+var blocos = document.querySelectorAll("div.blocos");
 var icone_menu = document.getElementById("i_menu");
 var icone_arrow = document.getElementById('icone_seta');
 var icone_menu = document.getElementById('i_menu');
 var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
+
+function inicia(){
+for(let j = 0; j < blocos.length; j++){
+  blocos[j].addEventListener('click',opacity);
+}
+}
+
+window.addEventListener("load", inicia);
 
 
 icone_menu.addEventListener('click',Menu);
