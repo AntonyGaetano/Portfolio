@@ -9,7 +9,8 @@ var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
-
+var Box_bloco = document.getElementById("bloco1");
+Box_bloco.addEventListener("click", MostraProjeto)
 
 
 icone_menu.addEventListener('click',Menu);
@@ -49,7 +50,7 @@ function ReverseBox1(event){
 
 //Criação do objeto com as informações do projeto1
 var bloco1 = {
-  num_projeto:1,
+  num_projeto:"Projeto 1",
   nome_projeto:"Calculado De IMC",
   descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporar!",
   tecnologia_usada1:"html",
@@ -59,7 +60,7 @@ var bloco1 = {
 
 var cont = 0
 function Menu(){
-  console.log(info.nome)
+  
 
   if(cont == 0){
   ul.style.display="flex";
@@ -99,3 +100,37 @@ function desopacity(event){
   (event.target.id == "bloco1"? Descricao.style.display="none" : "")
  }  */
 
+function MostraProjeto(){
+  document.getElementById("box-suspenso").style.display="flex"
+
+  var box = document.getElementById("box_interior");
+  var h2 = document.createElement('h3');
+  var div = document.createElement("div");
+  var div_img = document.createElement("div");
+  var h5 = document.createElement('h5')
+  var p = document.createElement('p')
+  var li_1 = document.createElement('li')
+  var li_2 = document.createElement('li')
+  var li_3 = document.createElement('li')
+  var btn = document.createElement('button')
+
+  h2.innerHTML=bloco1.nome_projeto;
+  div_img.innerHTML="Imagem do IMC";
+  h5.innerHTML=bloco1.descricao;
+  p.innerHTML= "Tecnologia Usada:";
+  li_1.innerHTML= bloco1.tecnologia_usada1;
+  li_2.innerHTML= bloco1.tecnologia_usada2;
+  li_3.innerHTML= bloco1.tecnologia_usada3;
+  btn.innerHTML="Ver projeto";
+  
+  div.appendChild(div_img);
+  div.appendChild(h5)
+
+  box.appendChild(h2);
+  box.appendChild(div);
+  box.appendChild(p);
+  box.appendChild(li_1);
+  box.appendChild(li_2);
+  box.appendChild(li_3);
+  box.appendChild(btn);
+}

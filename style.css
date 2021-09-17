@@ -118,7 +118,7 @@ margin:0.5rem 0;
     gap:1rem;
 }
 
-li{
+#ul > li{
 font-size: 2rem;
 list-style: none;
 transition: width 2s;
@@ -127,7 +127,7 @@ width: max-content;
 margin: auto;
 }
 
-li:hover{
+#ul > li:hover{
     cursor: pointer;
     color:white;
     border-bottom: 1px solid black;
@@ -306,6 +306,7 @@ i{
 }  */
 
 #box-suspenso{
+display: none;
 width: 100%;
 height: 50px;
 line-height: 50px;
@@ -314,7 +315,26 @@ z-index: 2;
 position: fixed;
 top: 20%; /* posiciona na metade da tela */
 margin-top:-25px;/* e retrocede metade da altura */
+}
 
+.box-interior{
+  background-color: #ccc;
+  width: 60%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-interior > button{
+    width: 10%;
+    margin: auto;
+}
+
+.box-interior > div{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
 }
 
 
