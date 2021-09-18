@@ -350,8 +350,8 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 .titulo_icone{
     width: 100%;
-    border: 1px solid;
+    padding: 0 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
