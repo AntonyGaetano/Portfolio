@@ -260,7 +260,6 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #bloco3{
@@ -346,5 +345,13 @@ margin-top:-25px;/* e retrocede metade da altura */
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.titulo_icone{
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }

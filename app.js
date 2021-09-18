@@ -102,7 +102,6 @@ function Menu(){
 
 
 function MostraProjeto(event){
-
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
   let Obj_bloco = [bloco1,"",bloco3,"",bloco5];
@@ -113,17 +112,22 @@ function MostraProjeto(event){
   var h2 = document.createElement('h3');
   var div_img_desc = document.createElement("div");
   var div_img = document.createElement("div");
+  var div_titulo_icone= document.createElement("div");
   var h5 = document.createElement('h5')
+  var icone = document.createElement('i')
+  icone.innerHTML="close"
   var p = document.createElement('p')
   var li_1 = document.createElement('li')
   var li_2 = document.createElement('li')
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
 
-  h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
-  div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   div_img.classList.add("img-info");
   div_img_desc.classList.add("img-descricao");
+  div_titulo_icone.classList.add("titulo_icone")
+
+  h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
+  div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   h5.innerHTML=Obj_bloco[num_obj-1].descricao;
   p.innerHTML= "Tecnologia Usada:";
   li_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
@@ -131,9 +135,11 @@ function MostraProjeto(event){
   li_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
   btn.innerHTML="Ver projeto";
 
-  div.appendChild(div_img);
-  div.appendChild(h5)
-  box.appendChild(h2);
+  div_img_desc.appendChild(div_img);
+  div_img_desc.appendChild(h5)
+  div_titulo_icone.appendChild(h2)
+  div_titulo_icone.appendChild(icone)
+  box.appendChild(div_titulo_icone);
   box.appendChild(div_img_desc);
   box.appendChild(p);
   box.appendChild(li_1);
