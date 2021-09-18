@@ -113,9 +113,13 @@ function MostraProjeto(){
   var li_2 = document.createElement('li')
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
-
+  
   h2.innerHTML=bloco1.nome_projeto;
-  div_img.innerHTML="Imagem do IMC";
+  div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
+  div_img.backgroundRepeat="no-repeat";
+  div_img.backgroundPosition="center";
+  div_img.backgroundSize="cover";
+
   h5.innerHTML=bloco1.descricao;
   p.innerHTML= "Tecnologia Usada:";
   li_1.innerHTML= bloco1.tecnologia_usada1;
