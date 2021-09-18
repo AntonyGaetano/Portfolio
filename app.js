@@ -80,8 +80,6 @@ var bloco5 = {
 
 var cont = 0
 function Menu(){
-  
-
   if(cont == 0){
   ul.style.display="flex";
   header.style.height="12rem";
@@ -103,19 +101,6 @@ function Menu(){
 }
 
 
-/*
-function opacity(event){
-
-  Descricao = document.getElementById("bloco1-div-info");
-
-  (event.target.id == "bloco1"? Descricao.style.display="block" : "")
-}
-
-function desopacity(event){
-
-  (event.target.id == "bloco1"? Descricao.style.display="none" : "")
- }  */
-
 function MostraProjeto(event){
 
   let id = event.target.id;
@@ -124,8 +109,9 @@ function MostraProjeto(event){
 
   document.getElementById("box-suspenso").style.display="flex"
   var box = document.getElementById("box_interior");
+
   var h2 = document.createElement('h3');
-  var div = document.createElement("div");
+  var div_img_desc = document.createElement("div");
   var div_img = document.createElement("div");
   var h5 = document.createElement('h5')
   var p = document.createElement('p')
@@ -133,48 +119,22 @@ function MostraProjeto(event){
   var li_2 = document.createElement('li')
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
-  
- // if(num == 1){
+
   h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   div_img.classList.add("img-info");
+  div_img_desc.classList.add("img-descricao");
   h5.innerHTML=Obj_bloco[num_obj-1].descricao;
   p.innerHTML= "Tecnologia Usada:";
   li_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
   li_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
   li_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
   btn.innerHTML="Ver projeto";
-  //}
-  /*
-  else if(num == 2){
-    h2.innerHTML=bloco2.nome_projeto;
-    div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
-    div_img.classList.add("img-info");
-    h5.innerHTML=bloco2.descricao;
-    p.innerHTML= "Tecnologia Usada:";
-    li_1.innerHTML= bloco2.tecnologia_usada1;
-    li_2.innerHTML= bloco2.tecnologia_usada2;
-    li_3.innerHTML= bloco2.tecnologia_usada3;
-    btn.innerHTML="Ver projeto";
-  }
-
-  else if(num == 3){
-    h2.innerHTML=bloco3.nome_projeto;
-    div_img.style.backgroundImage="url(fotos_projetos/projeto3.png)";
-    div_img.classList.add("img-info");
-    h5.innerHTML=bloco3.descricao;
-    p.innerHTML= "Tecnologia Usada:";
-    li_1.innerHTML= bloco3.tecnologia_usada1;
-    li_2.innerHTML= bloco3.tecnologia_usada2;
-    li_3.innerHTML= bloco3.tecnologia_usada3;
-    btn.innerHTML="Ver projeto";
-  } */
-  
 
   div.appendChild(div_img);
   div.appendChild(h5)
   box.appendChild(h2);
-  box.appendChild(div);
+  box.appendChild(div_img_desc);
   box.appendChild(p);
   box.appendChild(li_1);
   box.appendChild(li_2);
