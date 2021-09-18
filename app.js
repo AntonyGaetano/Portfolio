@@ -60,6 +60,24 @@ var bloco1 = {
   tecnologia_usada3:"Javascript",
 }
 
+var bloco2 = {
+  num_projeto:"Projeto 2",
+  nome_projeto:"Conversor de Temperatura",
+  descricao:"Esse projeto foi desenvolvido para transforma um valor em celsiu em fahrenheit e kelvin",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
+}
+
+var bloco3 = {
+  num_projeto:"Projeto 3",
+  nome_projeto:"Cronômetro",
+  descricao:"Esse projeto foi desenvolvido para auxiliar em alguma tarefa com tempo marcado",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
+}
+
 var cont = 0
 function Menu(){
   
@@ -102,7 +120,7 @@ function desopacity(event){
   (event.target.id == "bloco1"? Descricao.style.display="none" : "")
  }  */
 
-function MostraProjeto(){
+function MostraProjeto(num){
 
   document.getElementById("box-suspenso").style.display="flex"
 
@@ -117,7 +135,7 @@ function MostraProjeto(){
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
   
-  if(){
+  if(num == 1){
   h2.innerHTML=bloco1.nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto1.png)";
   div_img.classList.add("img-info");
@@ -128,7 +146,7 @@ function MostraProjeto(){
   li_3.innerHTML= bloco1.tecnologia_usada3;
   btn.innerHTML="Ver projeto";
   }
-  else if(){
+  else if(num == 2){
     h2.innerHTML=bloco2.nome_projeto;
     div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
     div_img.classList.add("img-info");
@@ -140,7 +158,7 @@ function MostraProjeto(){
     btn.innerHTML="Ver projeto";
   }
 
-  else if(){
+  else if(num == 3){
     h2.innerHTML=bloco3.nome_projeto;
     div_img.style.backgroundImage="url(fotos_projetos/projeto3.png)";
     div_img.classList.add("img-info");
