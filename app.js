@@ -10,9 +10,9 @@ var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
 
-var Box_bloco = document.getElementById("bloco1");
-
-Box_bloco.addEventListener("click", MostraProjeto)
+document.getElementById("bloco1").addEventListener('click',MostraProjeto)
+document.getElementById("bloco3").addEventListener('click',MostraProjeto)
+document.getElementById("bloco5").addEventListener('click',MostraProjeto)
 
 
 icone_menu.addEventListener('click',Menu);
@@ -60,7 +60,7 @@ var bloco1 = {
   tecnologia_usada3:"Javascript",
 }
 
-var bloco2 = {
+var bloco3 = {
   num_projeto:"Projeto 2",
   nome_projeto:"Conversor de Temperatura",
   descricao:"Esse projeto foi desenvolvido para transforma um valor em celsiu em fahrenheit e kelvin",
@@ -69,7 +69,7 @@ var bloco2 = {
   tecnologia_usada3:"Javascript",
 }
 
-var bloco3 = {
+var bloco5 = {
   num_projeto:"Projeto 3",
   nome_projeto:"Cronômetro",
   descricao:"Esse projeto foi desenvolvido para auxiliar em alguma tarefa com tempo marcado",
@@ -120,7 +120,7 @@ function MostraProjeto(event){
 
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
-  let Obj_bloco = [bloco1,bloco2,bloco3];
+  let Obj_bloco = [bloco1,"",bloco3,"",bloco5];
 
   document.getElementById("box-suspenso").style.display="flex"
   var box = document.getElementById("box_interior");
