@@ -19,7 +19,7 @@ icone_menu.addEventListener('click',Menu);
 
 //Chama de funções
 document.getElementById('btn-ver-projeto').addEventListener("click",Box1);
-
+document.getElementById("i_fechar").addEventListener("click",FecharProjeto);
 
 boxheader.addEventListener('click', ReverseBox1); 
 
@@ -84,7 +84,7 @@ function Menu(){
   ul.style.display="flex";
   header.style.height="12rem";
   header.style.backgroundColor="cornflowerblue";
-  header.style.border="1px solid"
+  header.style.border="1px solid";
   icone_menu.innerHTML="close";
   main.style.opacity=0.3;
   cont = 1;
@@ -94,7 +94,7 @@ function Menu(){
     header.style.height="3rem";
     icone_menu.innerHTML="menu";
     header.style.backgroundColor="";
-    header.style.border=""
+    header.style.border="";
     main.style.opacity=1;
     cont = 0;
   }
@@ -106,18 +106,19 @@ function MostraProjeto(event){
   var num_obj = id.replace(/\D/g,'');
   let Obj_bloco = [bloco1,"",bloco3,"",bloco5];
 
-  document.getElementById("box-suspenso").style.display="flex"
+  document.getElementById("box-suspenso").style.display="flex";
   var box = document.getElementById("box_interior");
   var h2 = document.getElementById("nome-projeto");
 
   var div_img_desc = document.createElement("div");
   var div_img = document.createElement("div");
-  var h5 = document.createElement('h5')
-  var p = document.createElement('p')
-  var li_1 = document.createElement('li')
-  var li_2 = document.createElement('li')
-  var li_3 = document.createElement('li')
-  var btn = document.createElement('button')
+  var h5 = document.createElement('h5');
+  var p = document.createElement('p');
+  var li_1 = document.createElement('li');
+  var li_2 = document.createElement('li');
+  var li_3 = document.createElement('li');
+  var btn = document.createElement('button');
+  
 
   div_img.classList.add("img-info");
   div_img_desc.classList.add("img-descricao");
@@ -132,11 +133,19 @@ function MostraProjeto(event){
   btn.innerHTML="Ver projeto";
 
   div_img_desc.appendChild(div_img);
-  div_img_desc.appendChild(h5)
+  div_img_desc.appendChild(h5);
   box.appendChild(div_img_desc);
   box.appendChild(p);
   box.appendChild(li_1);
   box.appendChild(li_2);
   box.appendChild(li_3);
   box.appendChild(btn);
+}
+
+function FecharProjeto(){
+  document.getElementById("box-suspenso").style.display="none";
+ 
+
+  var elem = document.getElementById('box_interior');
+  elem.parentNode.removeChild(elem);
 }
