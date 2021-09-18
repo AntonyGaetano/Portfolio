@@ -9,11 +9,11 @@ var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
-/*
+
 var Box_bloco = document.getElementById("bloco1");
 
 Box_bloco.addEventListener("click", MostraProjeto)
-*/
+
 
 icone_menu.addEventListener('click',Menu);
 
@@ -53,7 +53,7 @@ function ReverseBox1(event){
 //Criação do objeto com as informações do projeto1
 var bloco1 = {
   num_projeto:"Projeto 1",
-  nome_projeto:"Calculado De IMC",
+  nome_projeto:"Calculadora De IMC",
   descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporar!",
   tecnologia_usada1:"html",
   tecnologia_usada2:"Css",
@@ -103,16 +103,12 @@ function Menu(){
 }
 
 
-
-
 /*
 function opacity(event){
 
   Descricao = document.getElementById("bloco1-div-info");
 
   (event.target.id == "bloco1"? Descricao.style.display="block" : "")
-  
- 
 }
 
 function desopacity(event){
@@ -120,8 +116,14 @@ function desopacity(event){
   (event.target.id == "bloco1"? Descricao.style.display="none" : "")
  }  */
 
-function MostraProjeto(num){
+function MostraProjeto(event){
 
+  console.log(event.target.id)
+  let id = event.target.id;
+  var num_obj = id.replace(/\D/g,'');
+  console.log(num_obj);
+  id = bloco1+[1];
+  console.log(id)
   document.getElementById("box-suspenso").style.display="flex"
 
   var box = document.getElementById("box_interior");
@@ -135,17 +137,18 @@ function MostraProjeto(num){
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
   
-  if(num == 1){
-  h2.innerHTML=bloco1.nome_projeto;
+ // if(num == 1){
+  h2.innerHTML=id.nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto1.png)";
   div_img.classList.add("img-info");
-  h5.innerHTML=bloco1.descricao;
+  h5.innerHTML=id.descricao;
   p.innerHTML= "Tecnologia Usada:";
   li_1.innerHTML= bloco1.tecnologia_usada1;
   li_2.innerHTML= bloco1.tecnologia_usada2;
   li_3.innerHTML= bloco1.tecnologia_usada3;
   btn.innerHTML="Ver projeto";
-  }
+  //}
+  /*
   else if(num == 2){
     h2.innerHTML=bloco2.nome_projeto;
     div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
@@ -168,7 +171,7 @@ function MostraProjeto(num){
     li_2.innerHTML= bloco3.tecnologia_usada2;
     li_3.innerHTML= bloco3.tecnologia_usada3;
     btn.innerHTML="Ver projeto";
-  }
+  } */
   
 
   div.appendChild(div_img);
