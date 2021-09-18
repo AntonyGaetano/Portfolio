@@ -100,14 +100,16 @@ function Menu(){
   }
 }
 
-var box = document.createElement("div")
+ 
+
 function MostraProjeto(event){
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
   let Obj_bloco = [bloco1,"",bloco3,"",bloco5];
 
   document.getElementById("box-suspenso").style.display="flex";
-  var BoxTotal = document.getElementById("box_interior");
+  var box = document.getElementById("box_interior");
+  
   var h2 = document.getElementById("nome-projeto");
 
   var div_img_desc = document.createElement("div");
@@ -140,15 +142,15 @@ function MostraProjeto(event){
   box.appendChild(li_2);
   box.appendChild(li_3);
   box.appendChild(btn);
-  BoxTotal.appendChild(box)
 
   //tempo = setTimeout(FecharProjeto(box),1990)
 }
 
 function FecharProjeto(e){
+ // var box = document.querySelectorAll(".box_interior");
   document.getElementById("box-suspenso").style.display="none";  
-  
-  const item = e.target;
-  const Total = item.parentElement
-  Total.remove()
+ // console.log(box.lenght)
+
+  var elemento = document.querySelector(".box_interior");
+  elemento[0].parentNode.removeChild(elemento);
 }
