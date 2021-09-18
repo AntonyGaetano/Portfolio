@@ -118,16 +118,11 @@ function desopacity(event){
 
 function MostraProjeto(event){
 
-  console.log(event.target.id)
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
-  console.log(num_obj);
-  let ID = [];
+  let Obj_bloco = [bloco1,bloco2,bloco3];
 
-  ID.push(bloco1)
-  console.log(ID[0])
   document.getElementById("box-suspenso").style.display="flex"
-
   var box = document.getElementById("box_interior");
   var h2 = document.createElement('h3');
   var div = document.createElement("div");
@@ -140,14 +135,14 @@ function MostraProjeto(event){
   var btn = document.createElement('button')
   
  // if(num == 1){
-  h2.innerHTML=ID[0].nome_projeto;
-  div_img.style.backgroundImage="url(fotos_projetos/projeto1.png)";
+  h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
+  div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   div_img.classList.add("img-info");
-  h5.innerHTML=ID[0].descricao;
+  h5.innerHTML=Obj_bloco[num_obj-1].descricao;
   p.innerHTML= "Tecnologia Usada:";
-  li_1.innerHTML= bloco1.tecnologia_usada1;
-  li_2.innerHTML= bloco1.tecnologia_usada2;
-  li_3.innerHTML= bloco1.tecnologia_usada3;
+  li_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
+  li_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
+  li_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
   btn.innerHTML="Ver projeto";
   //}
   /*
