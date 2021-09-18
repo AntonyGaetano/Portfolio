@@ -9,9 +9,11 @@ var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
+/*
 var Box_bloco = document.getElementById("bloco1");
-Box_bloco.addEventListener("click", MostraProjeto)
 
+Box_bloco.addEventListener("click", MostraProjeto)
+*/
 
 icone_menu.addEventListener('click',Menu);
 
@@ -101,6 +103,7 @@ function desopacity(event){
  }  */
 
 function MostraProjeto(){
+
   document.getElementById("box-suspenso").style.display="flex"
 
   var box = document.getElementById("box_interior");
@@ -114,10 +117,8 @@ function MostraProjeto(){
   var li_3 = document.createElement('li')
   var btn = document.createElement('button')
   
-
-
+  if(){
   h2.innerHTML=bloco1.nome_projeto;
- 
   div_img.style.backgroundImage="url(fotos_projetos/projeto1.png)";
   div_img.classList.add("img-info");
   h5.innerHTML=bloco1.descricao;
@@ -126,10 +127,34 @@ function MostraProjeto(){
   li_2.innerHTML= bloco1.tecnologia_usada2;
   li_3.innerHTML= bloco1.tecnologia_usada3;
   btn.innerHTML="Ver projeto";
+  }
+  else if(){
+    h2.innerHTML=bloco2.nome_projeto;
+    div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
+    div_img.classList.add("img-info");
+    h5.innerHTML=bloco2.descricao;
+    p.innerHTML= "Tecnologia Usada:";
+    li_1.innerHTML= bloco2.tecnologia_usada1;
+    li_2.innerHTML= bloco2.tecnologia_usada2;
+    li_3.innerHTML= bloco2.tecnologia_usada3;
+    btn.innerHTML="Ver projeto";
+  }
+
+  else if(){
+    h2.innerHTML=bloco3.nome_projeto;
+    div_img.style.backgroundImage="url(fotos_projetos/projeto3.png)";
+    div_img.classList.add("img-info");
+    h5.innerHTML=bloco3.descricao;
+    p.innerHTML= "Tecnologia Usada:";
+    li_1.innerHTML= bloco3.tecnologia_usada1;
+    li_2.innerHTML= bloco3.tecnologia_usada2;
+    li_3.innerHTML= bloco3.tecnologia_usada3;
+    btn.innerHTML="Ver projeto";
+  }
   
+
   div.appendChild(div_img);
   div.appendChild(h5)
-
   box.appendChild(h2);
   box.appendChild(div);
   box.appendChild(p);
