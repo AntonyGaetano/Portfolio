@@ -115,10 +115,13 @@ function MostraProjeto(){
   var btn = document.createElement('button')
   
   h2.innerHTML=bloco1.nome_projeto;
-  div_img.style.backgroundImage="url(fotos_projetos/projeto2.png)";
+  div_img.style.width="300px";
+  div_img.style.height="170px";
+  div_img.style.border="1px solid yellow"; 
+  div_img.style.backgroundImage="url(fotos_projetos/projeto1.png)";
   div_img.backgroundRepeat="no-repeat";
   div_img.backgroundPosition="center";
-  div_img.backgroundSize="cover";
+  div_img.backgroundSize="cover"; 
 
   h5.innerHTML=bloco1.descricao;
   p.innerHTML= "Tecnologia Usada:";

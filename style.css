@@ -335,6 +335,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     width: 100%;
     justify-content: space-around;
     display: flex;
+    align-items: center;
 }
 
 
