@@ -207,6 +207,10 @@ i{
     border: 1px solid;
 }
 
+.blocos > div:hover{
+    cursor: pointer;
+}
+
 .blocos2{
     width: 400px;
     height: 300px;
