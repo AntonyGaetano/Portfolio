@@ -10,13 +10,12 @@ var ul = document.getElementById('ul');
 var header = document.getElementById("header");
 
 
-document.getElementById("bloco1").addEventListener('click',MostraProjeto)
-document.getElementById("bloco3").addEventListener('click',MostraProjeto)
-document.getElementById("bloco5").addEventListener('click',MostraProjeto)
-document.getElementById("bloco2").addEventListener('click',MostraProjeto)
-document.getElementById("bloco4").addEventListener('click',MostraProjeto)
-document.getElementById("bloco6").addEventListener('click',MostraProjeto)
 
+
+var BLOCOS = document.querySelectorAll('div.blocos-div');
+for(let k = 0; k < BLOCOS.length; k++){
+  BLOCOS[k].addEventListener('click',MostraProjeto)
+}
 
 icone_menu.addEventListener('click',Menu);
 
@@ -134,7 +133,7 @@ function Menu(){
 var ChamaProjeto = 0;
 
 function MostraProjeto(event){
-  
+
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
   let Obj_bloco = [bloco1,bloco2,bloco3,bloco4,bloco5, bloco6];
