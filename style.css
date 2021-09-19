@@ -386,3 +386,8 @@ margin-top:-25px;/* e retrocede metade da altura */
     justify-content: space-between;
     align-items: center;
 }
+
+footer > h4{
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
