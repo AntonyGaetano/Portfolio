@@ -262,6 +262,16 @@ i{
     align-items: center;
 }
 
+#bloco2{
+    background-image: url(/fotos_projetos/projeto2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #bloco3{
     background-image: url(/fotos_projetos/projeto3.png);
     background-repeat: no-repeat;
@@ -272,8 +282,29 @@ i{
     align-items: center;
 }
 
+#bloco4{
+    background-image: url(/fotos_projetos/projeto4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #bloco5{
     background-image: url(/fotos_projetos/projeto5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bloco6{
+    background-image: url(/fotos_projetos/projeto6.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

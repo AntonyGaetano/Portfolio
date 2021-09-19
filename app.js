@@ -13,6 +13,9 @@ var header = document.getElementById("header");
 document.getElementById("bloco1").addEventListener('click',MostraProjeto)
 document.getElementById("bloco3").addEventListener('click',MostraProjeto)
 document.getElementById("bloco5").addEventListener('click',MostraProjeto)
+document.getElementById("bloco2").addEventListener('click',MostraProjeto)
+document.getElementById("bloco4").addEventListener('click',MostraProjeto)
+document.getElementById("bloco6").addEventListener('click',MostraProjeto)
 
 
 icone_menu.addEventListener('click',Menu);
@@ -60,8 +63,17 @@ var bloco1 = {
   tecnologia_usada3:"Javascript",
 }
 
-var bloco3 = {
+var bloco2 = {
   num_projeto:"Projeto 2",
+  nome_projeto:"Validando Formulário",
+  descricao:"Esse projeto foi feito para validar formulário com javascript",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
+}
+
+var bloco3 = {
+  num_projeto:"Projeto 3",
   nome_projeto:"Conversor de Temperatura",
   descricao:"Esse projeto foi desenvolvido para transforma um valor em celsiu em fahrenheit e kelvin",
   tecnologia_usada1:"html",
@@ -69,10 +81,28 @@ var bloco3 = {
   tecnologia_usada3:"Javascript",
 }
 
+var bloco4 = {
+  num_projeto:"Projeto 4",
+  nome_projeto:"Jogo Pedra, Papel e Tesoura",
+  descricao:"Esse projeto foi a criação de um jogo com lógica de programção",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
+}
+
 var bloco5 = {
-  num_projeto:"Projeto 3",
+  num_projeto:"Projeto 5",
   nome_projeto:"Cronômetro",
   descricao:"Esse projeto foi desenvolvido para auxiliar em alguma tarefa com tempo marcado",
+  tecnologia_usada1:"html",
+  tecnologia_usada2:"Css",
+  tecnologia_usada3:"Javascript",
+}
+
+var bloco6 = {
+  num_projeto:"Projeto 6",
+  nome_projeto:"Lista De Tarefas",
+  descricao:"Esse projeto foi desenvolvido para auxiliar nas tarefas do dia a dia, para melhor organização",
   tecnologia_usada1:"html",
   tecnologia_usada2:"Css",
   tecnologia_usada3:"Javascript",
@@ -107,7 +137,7 @@ function MostraProjeto(event){
   
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
-  let Obj_bloco = [bloco1,"",bloco3,"",bloco5];
+  let Obj_bloco = [bloco1,bloco2,bloco3,bloco4,bloco5, bloco6];
   
 
   document.getElementById("box-suspenso").style.display="flex";
