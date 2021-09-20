@@ -18,6 +18,7 @@ for(let k = 0; k < BLOCOS.length; k++){
 }
 
 icone_menu.addEventListener('click',Menu);
+icone_sobe_header.addEventListener('click',Menu);
 
 //Chama de funções
 document.getElementById('btn-ver-projeto').addEventListener("click",Box1);
@@ -28,9 +29,10 @@ boxheader.addEventListener('click', ReverseBox1);
 
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
-    box1.style.height="50px";   
+    box1.style.height="50px";  
+    ul.style.display="none"; 
+    icone_sobe_header.style.display="none"
     tmp = setTimeout(ADD_i,900);
-
 }
 
 //Função para fazer o icone da seta ficar visível
