@@ -344,6 +344,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     justify-content: space-around;
     display: flex;
     align-items: center;
+    margin: 2rem 0;
 }
 
 .img-info{
@@ -394,7 +395,7 @@ footer > h4{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .tecnologia{
