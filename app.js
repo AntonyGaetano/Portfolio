@@ -8,7 +8,7 @@ var icone_menu = document.getElementById('i_menu');
 var boxheader = document.getElementById('box-header')
 var ul = document.getElementById('ul');
 var header = document.getElementById("header");
-
+var icone_sobe_header = document.getElementById('seta-box-header');
 
 
 
@@ -114,7 +114,8 @@ function Menu(){
   header.style.height="100%";
   header.style.backgroundColor="cornflowerblue";
   header.style.border="1px solid";
-  icone_menu.innerHTML="close";
+  icone_menu.innerHTML="";
+  icone_sobe_header.style.display="flex"
   main.style.opacity=0.3;
   cont = 1;
   }
@@ -124,6 +125,7 @@ function Menu(){
     icone_menu.innerHTML="menu";
     header.style.backgroundColor="";
     header.style.border="";
+    icone_sobe_header.style.display=""
     main.style.opacity=1;
     cont = 0;
   }
