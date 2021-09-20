@@ -328,9 +328,15 @@ margin-top:-25px;/* e retrocede metade da altura */
   background-color: #ccc;
   width: 60%;
   margin: auto;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.descricao{
+    width: 50%;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .img-descricao{
@@ -362,7 +368,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 .titulo_icone > h3{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0.7rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 footer > h4{
@@ -388,7 +394,7 @@ footer > h4{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .tecnologia{
@@ -414,4 +420,14 @@ footer > h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.detalhe > h5{
+  font-family:sans-serif;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.detalhe > button{
+    padding: 0.6rem 0.8rem;
 }

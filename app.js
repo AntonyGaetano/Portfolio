@@ -78,7 +78,7 @@ var bloco2 = {
 var bloco3 = {
   num_projeto:"Projeto 3",
   nome_projeto:"Conversor de Temperatura",
-  descricao:"Esse projeto foi desenvolvido para transforma um valor em celsiu em fahrenheit e kelvin",
+  descricao:"Esse projeto foi desenvolvido para transforma um valor em celsius em fahrenheit e kelvin",
   tecnologia_usada1:"html",
   tecnologia_usada2:"Css",
   tecnologia_usada3:"Javascript",
@@ -154,6 +154,7 @@ function MostraProjeto(event){
   var div_tec_det = document.createElement('div');
   var div_tec = document.createElement('div');
   var div_det = document.createElement('div');
+  var div_desc = document.createElement('div');
 
   var h5 = document.createElement('h5');
   var h4 = document.createElement('h4');
@@ -163,8 +164,9 @@ function MostraProjeto(event){
   var detalhe = document.createElement('h5'); 
   var btn = document.createElement('button');
 
+  div_desc.appendChild(h5)
   div_img_desc.appendChild(div_img);
-  div_img_desc.appendChild(h5);
+  div_img_desc.appendChild(div_desc);
 
   div_tec.appendChild(h4)
   div_tec.appendChild(p_1)
@@ -181,6 +183,7 @@ function MostraProjeto(event){
  
   div_img.classList.add("img-info");
   div_img_desc.classList.add("img-descricao");
+  div_desc.classList.add('descricao')
   div_tec.classList.add("tecnologia");
   div_det.classList.add('detalhe')
   div_tec_det.classList.add('tecnologia-detalhe')
