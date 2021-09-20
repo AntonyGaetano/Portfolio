@@ -214,6 +214,8 @@ i{
 
 .blocos > div:hover{
     cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px black;
 }
 
 .blocos2{
