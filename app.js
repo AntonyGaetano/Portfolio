@@ -209,14 +209,5 @@ function MostraProjeto(event){
 }
 
 function FecharProjeto(e){
-
   document.getElementById("box-suspenso").style.display="none";  
- 
-}
-
-function Remo(div_img_dess, div_imgg, h55, pp){
-   div_img_dess.remove()
-   div_imgg.remove()
-   h55.remove()
-   pp.remove()
 }
