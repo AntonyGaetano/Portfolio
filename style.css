@@ -313,34 +313,11 @@ i{
     justify-content: center;
     align-items: center;
 }
-
-/*
-.div-info-pro{
-    border: 1px solid;
-    width: 260px;
-    background-color: rgb(202, 199, 199);
-    text-align: center;
-    padding: 0.5rem;
-    display: none;
-    transition: 2s all;
-}
-
-.div-info-pro > p,  .div-info-pro > h4{
-  margin-top: 0.4rem;
-}
-
-
-.div-info-pro > button{
-    padding: 0.3rem;
-    margin: 0.5rem 0;
-    font-family: 'Courier New', Courier, monospace;
-}  */
-
+  
 #box-suspenso{
-display:none;
+display:flex;
 width: 100%;
 height: 50px;
-line-height: 50px;
 text-align:center;
 z-index: 2;
 position: fixed;
@@ -355,11 +332,6 @@ margin-top:-25px;/* e retrocede metade da altura */
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
-}
-
-.box-interior > button{
-    width: 10%;
-    margin: auto;
 }
 
 .img-descricao{
@@ -404,4 +376,30 @@ footer > h4{
 #seta-box-header:hover{
     cursor: pointer;
     color:white;
+}
+
+.tecnologia-detalhe{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tecnologia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologia > p, .tecnologia > h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.detalhe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

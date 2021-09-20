@@ -149,24 +149,19 @@ function MostraProjeto(event){
   var box = document.getElementById("box_interior");
   var h2 = document.getElementById("nome-projeto");
 
-  var div_img_desc;
-  var div_img;
-  var h5;
-  var p;
-  var li_1;
-  var li_2;
-  var li_3;
-  var btn;
-  
-  
-  div_img_desc = document.createElement("div");
-  div_img = document.createElement("div");
-  h5 = document.createElement('h5');
-  p = document.createElement('p');
-  li_1 = document.createElement('li');
-  li_2 = document.createElement('li');
-  li_3 = document.createElement('li');
-  btn = document.createElement('button');
+  var div_img_desc = document.createElement("div");
+  var div_img = document.createElement("div");
+  var div_tec_det = document.createElement('div');
+  var div_tec = document.createElement('div');
+  var div_det = document.createElement('div');
+
+  var h5 = document.createElement('h5');
+  var h4 = document.createElement('h4');
+  var p_1 = document.createElement('p');
+  var p_2 = document.createElement('p');
+  var p_3 = document.createElement('p');
+  var detalhe = document.createElement('h5'); 
+  var btn = document.createElement('button');
 
   div_img_desc.appendChild(div_img);
   div_img_desc.appendChild(h5);
@@ -184,10 +179,10 @@ function MostraProjeto(event){
     div_img_desc.remove()
     div_img.remove()
     h5.remove()
-    p.remove()
-    li_1.remove()
-    li_2.remove()
-    li_3.remove()
+    h4.remove()
+    p_1.remove()
+    p_2.remove()
+    p_3.remove()
     btn.remove()
   });
  
