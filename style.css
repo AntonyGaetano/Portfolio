@@ -161,6 +161,14 @@ i{
     cursor: pointer;
 }
 
+#i_fechar{
+    transition:0.3s;
+}
+
+#i_fechar:hover{
+    color:white;
+}
+
 
 #box2{
     width: 100%;
@@ -322,6 +330,7 @@ z-index: 2;
 position: fixed;
 top: 20%; /* posiciona na metade da tela */
 margin-top:-25px;/* e retrocede metade da altura */
+
 }
 
 .box-interior{
@@ -331,6 +340,8 @@ margin-top:-25px;/* e retrocede metade da altura */
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+ box-shadow:2px 2px 4px black;
 }
 
 .descricao{
@@ -348,8 +359,8 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .img-info{
-    width: 300px;
-    height: 170px;
+    width: 330px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -395,7 +406,7 @@ footer > h4{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .tecnologia{
