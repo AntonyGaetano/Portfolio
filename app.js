@@ -165,38 +165,45 @@ function MostraProjeto(event){
 
   div_img_desc.appendChild(div_img);
   div_img_desc.appendChild(h5);
-  box.appendChild(div_img_desc);
-  box.appendChild(p);
-  box.appendChild(li_1);
-  box.appendChild(li_2);
-  box.appendChild(li_3);
-  box.appendChild(btn);
 
+  div_tec.appendChild(h4)
+  div_tec.appendChild(p_1)
+  div_tec.appendChild(p_2)
+  div_tec.appendChild(p_3)
+  div_det.appendChild(detalhe);
+  div_det.appendChild(btn);
+
+  div_tec_det.appendChild(div_tec)
+  div_tec_det.appendChild(div_det)
+
+  box.appendChild(div_img_desc);
+  box.appendChild(div_tec_det);
+ 
+  div_img.classList.add("img-info");
+  div_img_desc.classList.add("img-descricao");
+  div_tec.classList.add("tecnologia");
+  div_det.classList.add('detalhe')
+  div_tec_det.classList.add('tecnologia-detalhe')
   
  
   
   document.getElementById("i_fechar").addEventListener("click",()=>{
     div_img_desc.remove()
     div_img.remove()
-    h5.remove()
-    h4.remove()
-    p_1.remove()
-    p_2.remove()
-    p_3.remove()
-    btn.remove()
+    div_tec_det.remove()
   });
  
 
 
-  div_img.classList.add("img-info");
-  div_img_desc.classList.add("img-descricao");
+
   h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   h5.innerHTML=Obj_bloco[num_obj-1].descricao;
-  p.innerHTML= "Tecnologia Usada:";
-  li_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
-  li_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
-  li_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
+  h4.innerHTML= "Tecnologia Usada:";
+  p_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
+  p_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
+  p_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
+  detalhe.innerHTML="Para mais detalhes, clique abaixo!"
   btn.innerHTML="Ver projeto";
   ChamaProjeto = 1;
 }
