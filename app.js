@@ -28,23 +28,13 @@ boxheader.addEventListener('click', ReverseBox1);
 
 
 //Função para fazer a transição do Box, após o clique no botão
-var Cont_Box = 0;
 function Box1(){
-    if(Cont_Box == 0){
+
     box1.style.height="50px";  
     ul.style.display="none"; 
     icone_sobe_header.style.display="none"
     tmp = setTimeout(ADD_i,900);
-    Cont_Box = 1;
-    }
-    else{
-      box1.style.height="657px";
-      icone_arrow.style.display='none';
-      icone_menu.style.display="inline-block";
-      boxheader.style.justifyContent="right";
-      box2.style.display="none";
-      Cont_Box = 0;
-    }
+ 
 }
 
 //Função para fazer o icone da seta ficar visível
