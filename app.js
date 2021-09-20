@@ -111,7 +111,7 @@ var cont = 0
 function Menu(){
   if(cont == 0){
   ul.style.display="flex";
-  header.style.height="12rem";
+  header.style.height="100%";
   header.style.backgroundColor="cornflowerblue";
   header.style.border="1px solid";
   icone_menu.innerHTML="close";
