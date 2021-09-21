@@ -446,3 +446,44 @@ footer > h4{
 .detalhe > button{
     padding: 0.6rem 0.8rem;
 }
+
+@media screen and (max-width: 1290px) {
+	body{
+	justify-content: center;
+	}
+    
+    #box2{
+        width: 100%;
+        overflow: hidden;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .blocos, .main-box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blocos > div, .blocos2 > div{
+        width: 20rem;
+        height: 10rem;
+        border: 1px solid;
+        transition: 0.3s;
+    }
+
+    .blocos, .blocos2{
+        margin: 0px;
+    }
+
+    .spaceA, .spaceB{
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+    }
+    
+
+}
