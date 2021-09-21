@@ -1,7 +1,7 @@
 *{padding:0px; margin:0px; box-sizing: border-box;}
 
 body{
-background-color: white;
+background-color: rgb(230, 218, 110);
 
 }
 
@@ -210,6 +210,7 @@ i{
     width: 100%;
     height: 260px;
     border: 1px solid;
+    transition: 0.3s;
 }
 
 .blocos > div:hover{
@@ -325,7 +326,7 @@ i{
 }
   
 #box-suspenso{
-display:flex;
+display:none;
 width: 100%;
 text-align:center;
 z-index: 2;
@@ -336,7 +337,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .box-interior{
-  background-color: #ccc;
+  background-color:rgb(76, 150, 247);
   width: 60%;
   margin: auto;
   padding: 1rem 1rem;

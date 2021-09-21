@@ -139,6 +139,8 @@ function Menu(){
 var ChamaProjeto = 0;
 
 function MostraProjeto(event){
+  
+  if(ChamaProjeto == 0){
 
   let id = event.target.id;
   var num_obj = id.replace(/\D/g,'');
@@ -189,15 +191,13 @@ function MostraProjeto(event){
   div_tec_det.classList.add('tecnologia-detalhe')
   
  
-  
   document.getElementById("i_fechar").addEventListener("click",()=>{
     div_img_desc.remove()
     div_img.remove()
     div_tec_det.remove()
+    ChamaProjeto = 0;
   });
  
-
-
 
   h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
@@ -207,8 +207,11 @@ function MostraProjeto(event){
   p_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
   p_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
   detalhe.innerHTML="Para mais detalhes, clique abaixo!"
-  btn.innerHTML="Ver projeto";
+  btn.innerHTML="Ver projeto"; 
+
   ChamaProjeto = 1;
+ }
+
 }
 
 function FecharProjeto(e){
