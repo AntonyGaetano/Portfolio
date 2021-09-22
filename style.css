@@ -452,18 +452,27 @@ footer > h4{
         background-color: white;
     }
 
-    #box2{
-        display: flex;
-    
-    }
-
     .main-box1{
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: auto;
     }
      
     .blocos{
+        width: 100%;
+        height: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
+
+    .blocos > div{
+        width: 40%;
+    }
+
+    .spaceA{
+        margin-top: 0px;
+     }
+     
   } 
