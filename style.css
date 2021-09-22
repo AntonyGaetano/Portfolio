@@ -448,50 +448,6 @@ footer > h4{
 }
 
 @media screen and (max-width: 1290px) {
-    *{margin: 0px; padding: 0px;}
-
-	body{
-	justify-content: center;
-	}
-    
-    #box2{
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        gap:0;
-    }
-
-    .blocos, .main-box1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        margin: 0;
-        padding: 0;
-    }
-
-    .blocos > div, .blocos2 > div{
-        width: 20rem;
-        height: 10rem;
-        border: 1px solid;
-        transition: 0.3s;
-        margin: 0;
-        padding: 0;
-    }
-
-    .main-box1{
-        margin: 0px;
-    }
-
-    .spaceA, .spaceB{
-    margin: 0px;
-    padding: 0px;
-    margin: auto;
-    }
     
 
 }
