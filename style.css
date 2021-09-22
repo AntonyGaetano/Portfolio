@@ -172,7 +172,6 @@ i{
 
 #box2{
     width: 100%;
-    height: 100%;
     border: 1px solid black; 
     display: none;
     flex-direction: column;
@@ -488,17 +487,22 @@ footer > h4{
   } 
 
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 730px){
 
     body{
         background-color: white;
-
+        display: flex;
+        flex-direction: column;
     }
 
     #box2{
-     width: 100%;
-     height: 1200px;
-
+        width: 100%;
+        height: 1300px;
+        display: none;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
     }
 
     .main-box1{
@@ -506,22 +510,25 @@ footer > h4{
         height: 100%;
         display: flex;
         flex-direction: column;
-        margin: auto;
+ 
       
     }
      
     .blocos{
-        width: 100%;
-        height: auto;
+        width: 82%;
+        height: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin:auto;
+        justify-content: center;
+        margin: auto;
     }
 
     .blocos > div{
-        width: 40%;
+        width: 100%;
+        height: 40%;
+        margin: auto;
     }
+
 
     .spaceA{
         margin-top: 0px;
