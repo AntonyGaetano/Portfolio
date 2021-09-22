@@ -483,6 +483,12 @@ footer > h4{
     .spaceA{
         margin-top: 0px;
      }
+
+     
+     #box_interior{
+        width: 85%;
+    }
+
      
   } 
 
@@ -533,4 +539,116 @@ footer > h4{
     .spaceA{
         margin-top: 0px;
      }
+
+     #box-suspenso{
+       top:12%;
+     }
+
+     #box_interior{
+         width: 85%;
+     }
+
+     .titulo_icone{
+         width: 100%;
+     }
+
+     .img-descricao{
+        display: flex;
+        flex-direction: column;
+    }
+    
+     .img-info{
+      width: 70%;
+      height:;
+      border: 1px solid;
+     }
+
+     
+  }
+
+  
+  @media screen and (max-width: 532px){
+
+    body{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box2{
+        width: 100%;
+        height: 1300px;
+        display: none;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .main-box1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+ 
+      
+    }
+     
+    .blocos{
+        width: 82%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .blocos > div{
+        width: 100%;
+        height: 40%;
+        margin: auto;
+    }
+
+
+    .spaceA{
+        margin-top: 0px;
+     }
+
+     #box-suspenso{
+       top:12%;
+     }
+
+     #box_interior{
+         width: 96%;
+         padding: 6px 2px;
+     }
+
+     .titulo_icone{
+         display: flex;
+         justify-content: space-between;
+         padding: 7px;
+     }
+
+     .img-descricao{
+        margin: 2.5% 0;
+        display: flex;
+        flex-direction: column;
+     }
+
+     .descricao{
+        width: 50%;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+     .img-info{
+      width: 70%;
+      height:;
+      border: 1px solid;
+     }
+
+     .tecnologia-detalhe{
+         margin: 2.5% 0;
+     }
+     
   }
