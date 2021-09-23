@@ -756,30 +756,42 @@ footer > h4{
       height: 600px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      background-color: rgb(43, 43, 44);
   }
 
   .box-sobre{
       width: 100%;
-      border: 1px solid blue;
+
       padding:0 3.7rem ;
   }
 
   .box-sobre > p{
-      font-size: 2.5rem;
+      font-size: 2rem;
+      margin: 0.2rem 0;
+      color:rgb(253, 231, 103);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   .box-sobre > h1{
       font-size: 4rem;
+      margin: 0.2rem 0;
+      color:white;
   } 
 
   .box-sobre > h4{
     font-size: 2.5rem;
     font-weight: 500;
+    margin: 0.7rem 0;
+    color:rgb(253, 231, 103);
+    font-family:;
    } 
 
    .box-sobre > h6{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
+    margin: 2rem 0;
+    color:white;
    }
   
   
