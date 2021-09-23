@@ -742,3 +742,10 @@ footer > h4{
      }
      
   }
+
+  :root {
+    --legend-bg-color: white;
+    --legend-padding: 0.4rem;
+    --border:1px solid black;
+  }
+  
