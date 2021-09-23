@@ -30,13 +30,16 @@ boxheader.addEventListener('click', ReverseBox1);
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
 
+  document.body.style.padding="none"
+  document.body.style.margin="none"
+  document.body.style.width=""
+  document.body.style.height=""
+
     box1.style.height="50px";  
     ul.style.display="none"; 
     icone_sobe_header.style.display="none"
     tmp = setTimeout(ADD_i,900);
 
-
- 
 }
 
 //Função para fazer o icone da seta ficar visível
@@ -55,6 +58,11 @@ function ReverseBox1(event){
     icone_menu.style.display="inline-block";
     boxheader.style.justifyContent="right";
     box2.style.display="none";
+
+    document.body.style.padding="0"
+    document.body.style.margin="0"
+    document.body.style.width="100%"
+    document.body.style.height="100%"
   }
 }
 
@@ -219,6 +227,7 @@ function MostraProjeto(event){
   btn.innerHTML="Ver projeto"; 
 
   ChamaProjeto = 1;
+ 
  }
 
 }
@@ -226,3 +235,12 @@ function MostraProjeto(event){
 function FecharProjeto(e){
   document.getElementById("box-suspenso").style.display="none";  
 }
+
+function Inicial(){
+  document.body.style.padding="0"
+  document.body.style.margin="0"
+  document.body.style.width="100%"
+  document.body.style.height="100%"
+}
+
+window.addEventListener("load",Inicial);
