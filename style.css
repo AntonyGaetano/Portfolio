@@ -748,4 +748,38 @@ footer > h4{
     --legend-padding: 0.4rem;
     --border:1px solid black;
   }
+
+  #sobre{
+      width: 100%;
+      border: 1px solid;
+      background-color: white;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .box-sobre{
+      width: 100%;
+      border: 1px solid blue;
+      padding:0 3.7rem ;
+  }
+
+  .box-sobre > p{
+      font-size: 2.5rem;
+  }
+
+  .box-sobre > h1{
+      font-size: 4rem;
+  } 
+
+  .box-sobre > h4{
+    font-size: 2.5rem;
+    font-weight: 500;
+   } 
+
+   .box-sobre > h6{
+    font-size: 1rem;
+    text-align: justify;
+   }
+  
   
