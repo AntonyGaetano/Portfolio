@@ -34,6 +34,8 @@ function Box1(){
     ul.style.display="none"; 
     icone_sobe_header.style.display="none"
     tmp = setTimeout(ADD_i,900);
+
+
  
 }
 
@@ -114,8 +116,15 @@ var bloco6 = {
 var cont = 0
 function Menu(){
   if(cont == 0){
+
+    var altura = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    
+    console.log(altura);
+
   ul.style.display="flex";
-  header.style.height="100%";
+  header.style.height=altura+"px";
   header.style.backgroundColor="cornflowerblue";
   header.style.border="1px solid";
   icone_menu.innerHTML="";
