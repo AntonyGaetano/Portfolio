@@ -518,9 +518,6 @@ footer > h4{
 		height: 100%;
 	}
 
-
-
-
     #box2{
         width: 100%;
         display: none;
@@ -552,7 +549,6 @@ footer > h4{
         margin: auto;
     }
 
-
     .spaceA{
         margin-top: 0px;
      }
@@ -562,14 +558,13 @@ footer > h4{
      }
 
      #box_interior{
-         width: 85%;
+        width: 85%;
      }
      
      .titulo_icone{
         display: flex;
         justify-content: space-between;
-        padding: 0px;
-        
+        padding: 0px; 
     }
 
     .img-descricao{
@@ -608,6 +603,7 @@ footer > h4{
     .main-img{
         width: 120px;
         height: 120px;
+        margin: 0.3rem 0;
     }
 
     #main1>h2{
@@ -621,6 +617,7 @@ footer > h4{
     }
 
     .btn{
+        margin: 0.4rem;
         padding: 0.5rem;
     }
 

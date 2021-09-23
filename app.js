@@ -128,8 +128,7 @@ function Menu(){
     var altura = window.innerHeight
     || document.documentElement.clientHeight
     || document.body.clientHeight;
-    
-    console.log(altura);
+  
 
   ul.style.display="flex";
   header.style.height=altura+"px";
