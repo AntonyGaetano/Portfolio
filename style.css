@@ -753,7 +753,7 @@ footer > h4{
       width: 100%;
       border: 1px solid;
       background-color: white;
-      height: 600px;
+      padding: 0.4rem 0;
       display: flex;
       justify-content: center;
       align-items: center;
