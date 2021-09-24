@@ -767,7 +767,7 @@ footer > h4{
       border: 1px solid;
       background-color: white;
       padding: 0.4rem 0;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       background-color: rgb(43, 43, 44);
@@ -807,4 +807,22 @@ footer > h4{
     color:white;
    }
   
+   #main-box2{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .main-tecnologia{
+       display: flex;
+       margin: auto;
+       padding: 0rem;
+    
+   }
+
+  
+
+
   
