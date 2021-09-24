@@ -57,19 +57,32 @@ margin:0.5rem 0;
 }
 
 .btn{
-    width: max-content;
+    width: 120px;
+    height: 45px;
     position: relative;
-    display: block;
     color: black;
     font-size: 14px;
     font-family: "montserrat";
     text-decoration: none;
     margin: 30px 0;
     border: 2px solid black;
-    padding: 1rem 1.4rem;
+    padding: 0;
     text-transform: uppercase;
     overflow: hidden;
     transition: 1s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butoes{
+    display: flex;
+}
+
+
+.butoes > div{
+    display: flex;
+    margin: 0 0.3rem;
 }
 
 .btn::before{
@@ -177,7 +190,6 @@ i{
     color:white;
 }
 
-
 #box2{
     width: 100%;
     display: none;
@@ -193,11 +205,9 @@ i{
     padding: 0.6rem;
     display: flex;
     justify-content: space-between;
- 
 }
 #bloco1{
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .blocos{
@@ -206,7 +216,6 @@ i{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    
 }
 
 .spaceA{
@@ -454,6 +463,8 @@ footer > h4{
     padding: 0.6rem 0.8rem;
 }
 
+
+
 @media screen and (max-width: 1340px){
 
     html{
@@ -499,7 +510,8 @@ footer > h4{
      #box_interior{
         width: 85%;
     }
-
+    
+    
      
   } 
 
@@ -615,10 +627,11 @@ footer > h4{
         margin: 0;
         font-size: 1.4rem;
     }
-
+  
     .btn{
-        margin: 0.4rem;
-        padding: 0.5rem;
+        width: 100px;
+        padding: 0;
+        height: 40px;
     }
 
     #i_menu{
@@ -642,8 +655,11 @@ footer > h4{
 		height: 100%;
 	}
 
-	
-    
+    .butoes{
+        display: flex;
+        
+        margin: 0.0rem 0;
+    }
 
     #box2{
         width: 100%;
@@ -681,9 +697,7 @@ footer > h4{
         font-size: 1.4rem;
     }
 
-    .middle{
-        margin: 1rem;
-    }
+    
      
     .blocos{
         width: 82%;
@@ -699,7 +713,6 @@ footer > h4{
         height: 40%;
         margin: auto;
     }
-
 
     .spaceA{
         margin-top: 0px;
