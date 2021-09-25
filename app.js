@@ -237,23 +237,34 @@ function Inicial(){
 
 
 function Sobre(){
-
    Menu();
 
    tempo = setTimeout(Box1,800)
 
    tmp = setTimeout(()=>{
-         // selecionar elemento
+   // selecionar elemento
     let el = document.getElementById('sobre');
     // utiliza método
-      let elCoordenadas = el.getBoundingClientRect();
-    // verificar as propriedades com as coord
-      console.log(elCoordenadas.y);
+     let elCoordenadas = el.getBoundingClientRect();
 
   window.scrollTo(0,elCoordenadas.y);
-   },1500)
+   },2200)
 
+}
 
+function Habilidade(){
+  Menu();
+
+  tempo = setTimeout(Box1,800)
+
+  tmp = setTimeout(()=>{
+  // selecionar elemento
+   let el = document.getElementById('Habilidade');
+   // utiliza método
+    let elCoordenadas = el.getBoundingClientRect();
+
+ window.scrollTo(0,elCoordenadas.y);
+  },2200)
 
 }
 
