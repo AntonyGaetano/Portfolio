@@ -22,6 +22,9 @@
 
      /*Cor da section onde fala sobre as tecnologia usada*/
     --bg-main-box2:rgb(243, 244, 247);
+
+    /*Cor usada na section minhas habilidade */
+    --bg-habilidade:white;
   }
 
 body{
@@ -224,6 +227,11 @@ i{
     background-color: var(--bg-box2);
 }
 
+#box2 > h4{
+    color:white;
+    font-size: 2rem;
+}
+
 .main-box1{
     width: 95%;
     padding: 0.6rem;
@@ -256,7 +264,8 @@ i{
 .blocos > div:hover{
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 2px 2px 5px black;
+
+    box-shadow: 2px 2px 5px #ccc;
 }
 
 .blocos2{
@@ -489,38 +498,46 @@ margin-top:-25px;/* e retrocede metade da altura */
       background-color: white;
       padding: 0.4rem 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: var(--bg-sobre);
 }
 
+#sobre > h4{
+    color:white;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
 .box-sobre{
       width: 100%;
+      margin: 1rem;
       padding:0 3.7rem ;
 }
 
 .box-sobre > p{
       font-size: 2rem;
-      margin: 0.2rem 0;
+      margin: 0.4rem 0;
       color:rgb(253, 231, 103);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .box-sobre > h1{
       font-size: 4rem;
-      margin: 0.2rem 0;
+      margin: 0.5rem 0;
       color:white;
 } 
 
 .box-sobre > h4{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 500;
     margin: 0.7rem 0;
     color:rgb(253, 231, 103);
 } 
 
 .box-sobre > h6{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     margin: 2rem 0;
     color:white;
@@ -597,17 +614,18 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #habilidades{
     height: max-content;
-    color:white;
     width: 100%;
     padding: 2rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-habilidade);
 }
 
 .box-habilidade > div >h4{
     margin-top: 1rem;
+    color:black
 }
 
 .box-habilidade{
@@ -621,8 +639,8 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #habilidades > h4{
     font-size: 2rem;
-    color:white;
-    margin-bottom: 0.5rem;
+    color:black;
+    margin-bottom: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
