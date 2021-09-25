@@ -217,7 +217,8 @@ function MostraProjeto(event){
   btn.innerHTML="Ver projeto"; 
 
   ChamaProjeto = 1;
- 
+
+
  }
 
 }
@@ -231,6 +232,29 @@ function Inicial(){
   document.body.style.margin="0"
   document.body.style.width="100%"
   document.body.style.height="100%"
+}
+
+
+
+function Sobre(){
+
+   Menu();
+
+   tempo = setTimeout(Box1,800)
+
+   tmp = setTimeout(()=>{
+         // selecionar elemento
+    let el = document.getElementById('sobre');
+    // utiliza método
+      let elCoordenadas = el.getBoundingClientRect();
+    // verificar as propriedades com as coord
+      console.log(elCoordenadas.y);
+
+  window.scrollTo(0,elCoordenadas.y);
+   },1500)
+
+
+
 }
 
 window.addEventListener("load",Inicial);

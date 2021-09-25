@@ -502,6 +502,7 @@ margin-top:-25px;/* e retrocede metade da altura */
       justify-content: center;
       align-items: center;
       background-color: var(--bg-sobre);
+      transition: 2s ease-in;
 }
 
 #sobre > h4{
