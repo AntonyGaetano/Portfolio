@@ -1,0 +1,52 @@
+*{padding:0px; margin:0px; box-sizing: border-box;}
+
+
+ 
+ /*
+    html{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+    #box2{
+     width: 100%;
+     height: 1200px;
+
+    }
+
+    .main-box1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      
+    }
+     
+    .blocos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .blocos > div{
+        width: 40%;
+    }
+
+    .spaceA{
+        margin-top: 0px;
+     }
+
+     
+     #box_interior{
+        width: 85%;
+    }
+    
+    
+     
+  

@@ -1,0 +1,131 @@
+*{padding:0px; margin:0px; box-sizing: border-box;}
+
+
+  
+
+
+   
+   /*
+
+   
+    body{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    html{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+    #box2{
+        width: 100%;
+        display: none;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .main-box1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .blocos{
+        width: 82%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .blocos > div{
+        width: 100%;
+        height: 40%;
+        margin: auto;
+    }
+
+    .spaceA{
+        margin-top: 0px;
+     }
+
+     #box-suspenso{
+       top:10%;
+     }
+
+     #box_interior{
+        width: 85%;
+     }
+     
+     .titulo_icone{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px; 
+    }
+
+    .img-descricao{
+       margin: 1.5px 0;
+       display: flex;
+       gap:1rem;
+    }
+
+    .descricao{
+       width: 50%;
+       text-align: center;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   
+    .img-info{
+     width: 60%;
+     height:120px;
+     border: 1px solid;
+    }
+
+    .tecnologia-detalhe{
+        margin: 1.5px 0;
+    }
+
+    .main-box1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #main1{
+        margin: 0rem 0;
+    }
+
+    .main-img{
+        width: 120px;
+        height: 120px;
+        margin: 0.3rem 0;
+    }
+
+    #main1>h2{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #main1>h4{
+        margin: 0;
+        font-size: 1.4rem;
+    }
+  
+    .btn{
+        width: 100px;
+        padding: 0;
+        height: 40px;
+    }
+
+    #i_menu{
+    transform: scale(1.5);
+    }
+     
+  
