@@ -494,66 +494,64 @@ margin-top:-25px;/* e retrocede metade da altura */
       background-color: var(--bg-sobre);
 }
 
-  .box-sobre{
+.box-sobre{
       width: 100%;
       padding:0 3.7rem ;
-  }
+}
 
-  .box-sobre > p{
+.box-sobre > p{
       font-size: 2rem;
       margin: 0.2rem 0;
       color:rgb(253, 231, 103);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+}
 
-  .box-sobre > h1{
+.box-sobre > h1{
       font-size: 4rem;
       margin: 0.2rem 0;
       color:white;
-  } 
+} 
 
-  .box-sobre > h4{
+.box-sobre > h4{
     font-size: 2.5rem;
     font-weight: 500;
     margin: 0.7rem 0;
     color:rgb(253, 231, 103);
-   } 
+} 
 
-   .box-sobre > h6{
+.box-sobre > h6{
     font-size: 1.2rem;
     text-align: justify;
     margin: 2rem 0;
     color:white;
-   }
+}
   
-   #main-box2{
+#main-box2{
     border: 1px solid;
     width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color:var(--bg-main-box2);
-    
-   }
+    background-color:var(--bg-main-box2); 
+}
 
-   .main-tecnologia{
+.main-tecnologia{
        display: flex;
        margin: auto;
        padding: 0rem;  
        justify-content: center;
        align-items: center;
-   }
+}
 
-   #main-box2 > h4{
+#main-box2 > h4{
        font-size: 2rem;
        margin-top: 3rem;
        color:black;
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       
-   }
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;      
+}
 
-   .main-tecnologia > div{
+.main-tecnologia > div{
        width: 230px;
        height: 250px;
        border: 1px solid black;
@@ -562,45 +560,80 @@ margin-top:-25px;/* e retrocede metade da altura */
        justify-content: center;
        align-items: center;
        margin: 0 1rem;;
-   }
+}
 
-   .main-tecnologia > div:nth-child(1){
+.main-tecnologia > div:nth-child(1){
        background-color: rgb(243, 42, 15);
        color:white
-   }
+}
 
-   .main-tecnologia > div:nth-child(2){
+.main-tecnologia > div:nth-child(2){
     background-color: blue; 
     color:white
-    }
+}
 
-    .main-tecnologia > div:nth-child(3){
+.main-tecnologia > div:nth-child(3){
         background-color: rgb(243, 218, 77); 
         color:white
-    }
+}
 
-    .main-tecnologia > div:nth-child(4){
+.main-tecnologia > div:nth-child(4){
         background-color:rgb(68, 29, 175);
         color:white;
-    }
+}
 
-   .main-tecnologia > div > img{
+.main-tecnologia > div > img{
        width: 70px;
-   }
+}
 
-   .main-tecnologia > div > h4{
+.main-tecnologia > div > h4{
     margin-top: 1rem;
-   }
+}
 
-   .main-tecnologia > div:hover{
+.main-tecnologia > div:hover{
        border: 2px solid black;
        box-shadow: 2px 2px 4px black;
-   }
+}
 
 #habilidades{
+    height: max-content;
     color:white;
     border: 1px solid white;
     width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-habilidade{
+    display: flex;
+    margin: auto;
+    padding: 0rem;  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#habilidades > h4{
+    font-size: 2rem;
+    
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.box-habilidade > div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;;
 }
 
 
