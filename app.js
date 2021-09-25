@@ -237,6 +237,7 @@ function Inicial(){
 
 
 function Sobre(){
+
    Menu();
 
    tempo = setTimeout(Box1,800)
@@ -252,20 +253,5 @@ function Sobre(){
 
 }
 
-function Habilidade(){
-  Menu();
-
-  tempo = setTimeout(Box1,800)
-
-  tmp = setTimeout(()=>{
-  // selecionar elemento
-   let el = document.getElementById('Habilidade');
-   // utiliza método
-    let elCoordenadas = el.getBoundingClientRect();
-
- window.scrollTo(0,elCoordenadas.y);
-  },2200)
-
-}
 
 window.addEventListener("load",Inicial);
