@@ -242,4 +242,4 @@ function Inicial(){
   document.body.style.height="100%"
 }
 
-window.addEventListener("load",Inicial);
+window.addEventListener("load",Inicia);

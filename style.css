@@ -497,7 +497,7 @@ margin-top:-25px;/* e retrocede metade da altura */
       width: 100%;
       background-color: white;
       padding: 0.4rem 0;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -554,11 +554,12 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .main-tecnologia{
-       display: flex;
+       display: none;
        margin: auto;
        padding: 0rem;  
        justify-content: center;
        align-items: center;
+       flex-wrap: wrap;
 }
 
 #main-box2 > h4{
@@ -616,7 +617,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     height: max-content;
     width: 100%;
     padding: 2rem ;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -692,7 +693,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #contato{
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -713,7 +714,6 @@ margin-top:-25px;/* e retrocede metade da altura */
     display: flex;
     margin-top: 1rem;
 }
-
 
 
 
@@ -913,6 +913,7 @@ margin-top:-25px;/* e retrocede metade da altura */
         margin: 0.0rem 0;
     }
 
+ 
     #box2{
         width: 100%;
         height: 1300px;
@@ -949,7 +950,7 @@ margin-top:-25px;/* e retrocede metade da altura */
         font-size: 1.4rem;
     }
 
-    
+   
      
     .blocos{
         width: 82%;
@@ -1005,6 +1006,30 @@ margin-top:-25px;/* e retrocede metade da altura */
      .tecnologia-detalhe{
          margin: 2.5% 0;
      }
+
+     #main-box2{
+        height: 770px; 
+        padding-bottom: 0.5rem; 
+     }
+
+     .main-tecnologia{
+         display: flex;
+         flex-direction: column;
+       
+     }
+
+     .main-tecnologia > div{
+       width: 120px;
+       height: 135px;
+       margin: 0.6rem 0;
+      }
+
+      #main-box2 > h4{
+        font-size: 1rem;
+        margin-top: 3rem;
+        color:black;
+        font-family:Georgia, 'Times New Roman', Times, serif;      
+    }
      
   }
 
