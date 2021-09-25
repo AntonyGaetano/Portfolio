@@ -810,16 +810,49 @@ footer > h4{
    #main-box2{
     border: 1px solid;
     width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
    }
 
    .main-tecnologia{
        display: flex;
        margin: auto;
-       padding: 0rem;
-    
+       padding: 0rem;  
+       justify-content: center;
+       align-items: center;
+   }
+
+   .main-tecnologia > div{
+       width: 200px;
+       height: 250px;
+       border: 1px solid;
+       display: flex ;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .main-tecnologia > div:nth-child(1){
+       background-color: rgb(243, 42, 15);
+   }
+
+   .main-tecnologia > div:nth-child(2){
+    background-color: blue; 
+    }
+
+    .main-tecnologia > div:nth-child(3){
+        background-color: rgb(253, 222, 45); 
+    }
+
+    .main-tecnologia > div:nth-child(4){
+        background-color:white;
+    }
+
+   .main-tecnologia > div > img{
+       width: 70px;
    }
 
   
