@@ -1,8 +1,31 @@
 *{padding:0px; margin:0px; box-sizing: border-box;}
 
-body{
-background-color:#d15c68;
+:root {
+    --legend-bg-color: white;
+    --legend-padding: 0.4rem;
+    --border:1px solid black;
 
+     /*Cor do body */
+    --bg-body:rgb(62, 63, 65); 
+     
+    /*Cor da section inicial*/
+    --bg-box1:#e64e60;
+
+     /*Cor onde fica os projetos*/
+    --bg-box2:#afa0a2;
+
+     /*Cor da section interio com info do projeto*/
+    --bg-box-interior:rgb(76, 150, 247);
+
+      /*Cor da section onde fala sobre mim*/
+    --bg-sobre:rgb(43, 43, 44);
+
+     /*Cor da section onde fala sobre as tecnologia usada*/
+    --bg-main-box2:rgb(62, 63, 65);
+  }
+
+body{
+background-color: var(--bg-body);
 }
 
 html{
@@ -17,7 +40,7 @@ html{
 width: 100%;
 height: 657px;
 transition: height 1s ease-in-out;
-background-color:#e64e60;
+background-color:var(--bg-box1);
 overflow: hidden;
 border-bottom: 1px solid;
 }
@@ -138,13 +161,13 @@ margin:0.5rem 0;
     gap:1rem;
 }
 
-#ul > li{
-font-size: 2rem;
-list-style: none;
-transition: width 2s;
-border-width: 0px;
-width: max-content;
-margin: auto;
+#ul > li{ 
+   font-size: 2rem;
+   list-style: none;
+   transition: width 2s;
+   border-width: 0px;
+   width: max-content;
+   margin: auto;
 }
 
 #ul > li:hover{
@@ -157,14 +180,13 @@ margin: auto;
 i{
     transform: scale(2);
     pointer-events: all;
-    cursor: pointer;
-   
+    cursor: pointer;   
 }
 
 #i_menu{
     color:black;
     transition: 0.5s;
-  }
+}
 
 #i_menu:hover{
     color:white;
@@ -197,8 +219,9 @@ i{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 0.7rem 0;
+    padding-top: 1rem;
     gap:1.5rem;
+    background-color: var(--bg-box2);
 }
 
 .main-box1{
@@ -354,7 +377,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .box-interior{
-  background-color:rgb(76, 150, 247);
+  background-color:var(--bg-box-interior);
   width: 60%;
   margin: auto;
   padding: 1rem 1rem;
@@ -463,6 +486,113 @@ footer > h4{
 .detalhe > button{
     padding: 0.6rem 0.8rem;
 }
+
+#sobre{
+      width: 100%;
+      border: 1px solid;
+      background-color: white;
+      padding: 0.4rem 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bg-sobre);
+}
+
+  .box-sobre{
+      width: 100%;
+
+      padding:0 3.7rem ;
+  }
+
+  .box-sobre > p{
+      font-size: 2rem;
+      margin: 0.2rem 0;
+      color:rgb(253, 231, 103);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .box-sobre > h1{
+      font-size: 4rem;
+      margin: 0.2rem 0;
+      color:white;
+  } 
+
+  .box-sobre > h4{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0.7rem 0;
+    color:rgb(253, 231, 103);
+   } 
+
+   .box-sobre > h6{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 2rem 0;
+    color:white;
+   }
+  
+   #main-box2{
+    border: 1px solid;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:var(--bg-main-box2);
+   }
+
+   .main-tecnologia{
+       display: flex;
+       margin: auto;
+       padding: 0rem;  
+       justify-content: center;
+       align-items: center;
+   }
+
+   #main-box2 > h4{
+       font-size: 2rem;
+       margin-top: 3rem;
+       color:white;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   .main-tecnologia > div{
+       width: 230px;
+       height: 250px;
+       border: 1px solid;
+       display: flex ;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: 0 1rem;;
+   }
+
+   .main-tecnologia > div:nth-child(1){
+       background-color: rgb(243, 42, 15);
+       color:white
+   }
+
+   .main-tecnologia > div:nth-child(2){
+    background-color: blue; 
+    color:white
+    }
+
+    .main-tecnologia > div:nth-child(3){
+        background-color: rgb(253, 222, 45); 
+        color:white
+    }
+
+    .main-tecnologia > div:nth-child(4){
+        background-color:rgb(68, 29, 175);
+        color:white;
+    }
+
+   .main-tecnologia > div > img{
+       width: 70px;
+   }
+
+   .main-tecnologia > div > h4{
+    margin-top: 0.9rem;
+   }
 
 
 
@@ -757,119 +887,7 @@ footer > h4{
      
   }
 
-  :root {
-    --legend-bg-color: white;
-    --legend-padding: 0.4rem;
-    --border:1px solid black;
-  }
-
-  #sobre{
-      width: 100%;
-      border: 1px solid;
-      background-color: white;
-      padding: 0.4rem 0;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(43, 43, 44);
-  }
-
-  .box-sobre{
-      width: 100%;
-
-      padding:0 3.7rem ;
-  }
-
-  .box-sobre > p{
-      font-size: 2rem;
-      margin: 0.2rem 0;
-      color:rgb(253, 231, 103);
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .box-sobre > h1{
-      font-size: 4rem;
-      margin: 0.2rem 0;
-      color:white;
-  } 
-
-  .box-sobre > h4{
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin: 0.7rem 0;
-    color:rgb(253, 231, 103);
-   } 
-
-   .box-sobre > h6{
-    font-size: 1.2rem;
-    text-align: justify;
-    margin: 2rem 0;
-    color:white;
-   }
-  
-   #main-box2{
-    border: 1px solid;
-    width: 100%;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color:rgb(62, 63, 65);
-   }
-
-   .main-tecnologia{
-       display: flex;
-       margin: auto;
-       padding: 0rem;  
-       justify-content: center;
-       align-items: center;
-   }
-
-   #main-box2 > h4{
-       font-size: 2rem;
-       margin-top: 3rem;
-       color:white;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   }
-
-   .main-tecnologia > div{
-       width: 200px;
-       height: 250px;
-       border: 1px solid;
-       display: flex ;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin: 0 1rem;;
-   }
-
-   .main-tecnologia > div:nth-child(1){
-       background-color: rgb(243, 42, 15);
-       color:white
-   }
-
-   .main-tecnologia > div:nth-child(2){
-    background-color: blue; 
-    color:white
-    }
-
-    .main-tecnologia > div:nth-child(3){
-        background-color: rgb(253, 222, 45); 
-        color:white
-    }
-
-    .main-tecnologia > div:nth-child(4){
-        background-color:rgb(68, 29, 175);
-        color:white;
-    }
-
-   .main-tecnologia > div > img{
-       width: 70px;
-   }
-
-   .main-tecnologia > div > h4{
-    margin-top: 0.9rem;
-   }
-
+ 
   
 
 
