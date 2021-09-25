@@ -555,10 +555,11 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 .main-tecnologia{
        display: flex;
-       margin: auto;
-       padding: 0rem;  
+   
+       
        justify-content: center;
        align-items: center;
+       flex-wrap: wrap;
 }
 
 #main-box2 > h4{
