@@ -598,13 +598,16 @@ margin-top:-25px;/* e retrocede metade da altura */
 #habilidades{
     height: max-content;
     color:white;
-
     width: 100%;
-    padding: 1rem;
+    padding: 2rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.box-habilidade > div >h4{
+    margin-top: 1rem;
 }
 
 .box-habilidade{
@@ -618,9 +621,9 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #habilidades > h4{
     font-size: 2rem;
-    color:black;
+    color:white;
+    margin-bottom: 0.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
 }
 
 .box-habilidade > div{
@@ -633,6 +636,41 @@ margin-top:-25px;/* e retrocede metade da altura */
     justify-content: center;
     align-items: center;
     margin: 1rem 1rem;
+}
+
+
+.box-habilidade  > div:nth-child(1){
+    background-color: rgb(243, 42, 15);
+    color:white
+}
+
+.box-habilidade  > div:nth-child(2){
+ background-color: blue; 
+ color:white
+}
+
+.box-habilidade  > div:nth-child(3){
+     background-color: rgb(243, 218, 77); 
+     color:white
+}
+
+.box-habilidade  > div:nth-child(4){
+     background-color:rgb(68, 29, 175);
+     color:white;
+}
+
+.box-habilidade  > div:nth-child(5){
+    background-color:rgb(87, 129, 219);
+    color:white;
+}
+
+.box-habilidade  > div:nth-child(6){
+    background-color:rgb(33, 86, 201);
+    color:white;
+}
+
+.box-habilidade > div > img{
+    width: 60px;
 }
 
 
