@@ -706,7 +706,15 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #contato >  h4{
     font-size: 1.3rem;
+    margin: 0.8rem 0;
 }
+
+#box-contato{
+    display: flex;
+    margin-top: 1rem;
+}
+
+
 
 
 @media screen and (max-width: 1340px){
