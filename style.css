@@ -597,6 +597,12 @@ margin-top:-25px;/* e retrocede metade da altura */
        box-shadow: 2px 2px 4px black;
    }
 
+#habilidades{
+    color:white;
+    border: 1px solid white;
+    width: 100%;
+}
+
 
 
 @media screen and (max-width: 1340px){
