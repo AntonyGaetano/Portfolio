@@ -6,13 +6,13 @@
     --border:1px solid black;
 
      /*Cor do body */
-    --bg-body:rgb(62, 63, 65); 
+    --bg-body:rgb(90, 143, 248); 
      
     /*Cor da section inicial*/
     --bg-box1:#e64e60;
 
      /*Cor onde fica os projetos*/
-    --bg-box2:#afa0a2;
+    --bg-box2:rgb(43, 43, 44);
 
      /*Cor da section interio com info do projeto*/
     --bg-box-interior:rgb(76, 150, 247);
@@ -21,7 +21,7 @@
     --bg-sobre:rgb(43, 43, 44);
 
      /*Cor da section onde fala sobre as tecnologia usada*/
-    --bg-main-box2:rgb(62, 63, 65);
+    --bg-main-box2:rgb(243, 244, 247);
   }
 
 body{
@@ -265,6 +265,7 @@ i{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between; 
+    gap: 0;
 }
 
 .blocos2 > div{
@@ -426,10 +427,6 @@ margin-top:-25px;/* e retrocede metade da altura */
     font-size: 1.2rem;
 }
 
-footer > h4{
-  font-size: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 #seta-box-header{
     position: absolute;
@@ -489,10 +486,9 @@ footer > h4{
 
 #sobre{
       width: 100%;
-      border: 1px solid;
       background-color: white;
       padding: 0.4rem 0;
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       background-color: var(--bg-sobre);
@@ -500,7 +496,6 @@ footer > h4{
 
   .box-sobre{
       width: 100%;
-
       padding:0 3.7rem ;
   }
 
@@ -534,11 +529,12 @@ footer > h4{
    #main-box2{
     border: 1px solid;
     width: 100%;
-    height: 540px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color:var(--bg-main-box2);
+    
    }
 
    .main-tecnologia{
@@ -552,13 +548,15 @@ footer > h4{
    #main-box2 > h4{
        font-size: 2rem;
        margin-top: 3rem;
-       color:white;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       color:black;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
    }
 
    .main-tecnologia > div{
        width: 230px;
        height: 250px;
-       border: 1px solid;
+       border: 1px solid black;
        display: flex ;
        flex-direction: column;
        justify-content: center;
@@ -577,7 +575,7 @@ footer > h4{
     }
 
     .main-tecnologia > div:nth-child(3){
-        background-color: rgb(253, 222, 45); 
+        background-color: rgb(243, 218, 77); 
         color:white
     }
 
@@ -591,7 +589,12 @@ footer > h4{
    }
 
    .main-tecnologia > div > h4{
-    margin-top: 0.9rem;
+    margin-top: 1rem;
+   }
+
+   .main-tecnologia > div:hover{
+       border: 2px solid black;
+       box-shadow: 2px 2px 4px black;
    }
 
 
