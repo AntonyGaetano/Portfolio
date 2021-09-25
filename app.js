@@ -176,9 +176,6 @@ function MostraProjeto(event){
 
   var h5 = document.createElement('h5');
   var h4 = document.createElement('h4');
-  var p_1 = document.createElement('p');
-  var p_2 = document.createElement('p');
-  var p_3 = document.createElement('p');
   var detalhe = document.createElement('h5'); 
   var btn = document.createElement('button');
 
@@ -187,9 +184,7 @@ function MostraProjeto(event){
   div_img_desc.appendChild(div_desc);
 
   div_tec.appendChild(h4)
-  div_tec.appendChild(p_1)
-  div_tec.appendChild(p_2)
-  div_tec.appendChild(p_3)
+
   div_det.appendChild(detalhe);
   div_det.appendChild(btn);
 
@@ -218,10 +213,6 @@ function MostraProjeto(event){
   h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
   div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
   h5.innerHTML=Obj_bloco[num_obj-1].descricao;
-  h4.innerHTML= "Tecnologia Usada:";
-  p_1.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada1;
-  p_2.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada2;
-  p_3.innerHTML= Obj_bloco[num_obj-1].tecnologia_usada3;
   detalhe.innerHTML="Para mais detalhes, clique abaixo!"
   btn.innerHTML="Ver projeto"; 
 

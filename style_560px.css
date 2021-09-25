@@ -181,8 +181,9 @@ html{
   }
 
   .descricao{
-     width: 50%;
-     text-align: center;
+     width: 80%;
+     margin-top: 0.4rem;
+     text-align: justify;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  
@@ -224,6 +225,15 @@ html{
 
 #i_menu{
 transform: scale(1.5);
+}
+
+.butoes{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and () {
+    
 }
  
 

@@ -453,7 +453,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 .tecnologia-detalhe{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 1rem 0;
 }
