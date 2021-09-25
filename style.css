@@ -598,7 +598,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 #habilidades{
     height: max-content;
     color:white;
-    border: 1px solid white;
+
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -618,7 +618,6 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #habilidades > h4{
     font-size: 2rem;
-    
     color:black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
@@ -633,7 +632,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;;
+    margin: 1rem 1rem;
 }
 
 
