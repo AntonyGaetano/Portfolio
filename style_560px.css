@@ -161,7 +161,7 @@ html{
 }
 
 #box-suspenso{
-    top:12%;
+    top:9%;
   }
 
   #box_interior{
@@ -176,7 +176,8 @@ html{
   }
 
   .img-descricao{
-     margin: 2.5% 0;
+     margin-top: 2.5% ;
+     margin-bottom: 0.5%;
      display: flex;
      flex-direction: column;
   }
@@ -185,6 +186,7 @@ html{
      width: 80%;
      margin-top: 0.4rem;
      text-align: justify;
+     font-size: 0.9rem;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  
@@ -194,7 +196,7 @@ html{
   }
 
   .tecnologia-detalhe{
-      margin: 2.5% 0;
+      margin:0.4rem 0;
   }
 
   
@@ -231,7 +233,6 @@ transform: scale(1.5);
 .butoes{
     display: flex;
     flex-direction: column;
-
 }
 
 @media screen and (min-width: 640px){

@@ -26,6 +26,9 @@ document.getElementById("i_fechar").addEventListener("click",FecharProjeto);
 
 boxheader.addEventListener('click', ReverseBox1); 
 
+document.getElementById("li_sobre").addEventListener("click",Sobre);
+document.getElementById("li_habilidades").addEventListener("click",Sobre);
+
 
 //Função para fazer a transição do Box, após o clique no botão
 function Box1(){
@@ -70,55 +73,37 @@ function ReverseBox1(event){
 var bloco1 = {
   num_projeto:"Projeto 1",
   nome_projeto:"Calculadora De IMC",
-  descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporar!",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporal. Foi usado as seguintes tecnologias no processo: HTML, CSS, JAVASCRIPT. O projeto já está responsivo e pronto para uso!",
 }
 
 var bloco2 = {
   num_projeto:"Projeto 2",
   nome_projeto:"Validando Formulário",
-  descricao:"Esse projeto foi feito para validar formulário com javascript",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto foi feito para validar formulário , sabemos que a validação pode ser feito atráves do html por si, mas resolvi mostrar um pouco da habilidade em JS e fiz o processo da validação com script. Nesse projeto foi usado Html para marcação, Css para estilização e Javascript para validação. Esse projeto já está responsivo!",
 }
 
 var bloco3 = {
   num_projeto:"Projeto 3",
   nome_projeto:"Conversor de Temperatura",
-  descricao:"Esse projeto foi desenvolvido para transforma um valor em celsius em fahrenheit e kelvin",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto é uma calculadora que  transforma um valor em celsius em fahrenheit ou celsius em kelvin. É um projeto bastante legal e interativo. Foi usado HTML, CSS e JAVASCRIPT como tecnologias. O projeto já está responsivo e pronto para uso!",
 }
 
 var bloco4 = {
   num_projeto:"Projeto 4",
   nome_projeto:"Jogo Pedra, Papel e Tesoura",
-  descricao:"Esse projeto foi a criação de um jogo com lógica de programção",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto foi a criação de um jogo chamado Pedra, Papel e Tesoura. Um projeto bastante interativo e divertido. Foi usado o Html para marcação, Css para estilizar, e o Javascript para fazer todo o restante, como por exemplo a logica do jogo. Esse projeto já está responsivo e pronto para jogar!",
 }
 
 var bloco5 = {
   num_projeto:"Projeto 5",
   nome_projeto:"Cronômetro",
-  descricao:"Esse projeto foi desenvolvido para auxiliar em alguma tarefa com tempo marcado",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto é simples, mas só quem já fez sabe o quão pode quebrar um pouco a cabeça, pois precisa de um pouco de lógica de programção e conhecimento para se usar. Foi desenvolvido para auxiliar em alguma tarefa com tempo marcado. As Tecnologias usadas foi Html, Css e Javascript! Esse projeto já está responsivo e para se utilizar!",
 }
 
 var bloco6 = {
   num_projeto:"Projeto 6",
   nome_projeto:"Lista De Tarefas",
-  descricao:"Esse projeto foi desenvolvido para auxiliar nas tarefas do dia a dia, para melhor organização",
-  tecnologia_usada1:"html",
-  tecnologia_usada2:"Css",
-  tecnologia_usada3:"Javascript",
+  descricao:"Esse projeto foi desenvolvido para auxiliar nas tarefas do dia a dia, para melhor organização. A lista de tarefa foi um projeto bacana de desenvolver, pos foi usado nele um armazenamento local, o localStorage, para guardar as tarefas. Esse projeto foi feito com Html, CSS e Javascript! Esse projeto já está responsivo e pronto para utilizar",
 }
 
 var cont = 0
@@ -217,13 +202,11 @@ function MostraProjeto(event){
   btn.innerHTML="Ver projeto"; 
 
   ChamaProjeto = 1;
-
-
  }
 
 }
 
-function FecharProjeto(e){
+function FecharProjeto(){
   document.getElementById("box-suspenso").style.display="none";  
 }
 
@@ -236,22 +219,34 @@ function Inicial(){
 
 
 
-function Sobre(){
+function Sobre(event){
+   let id  = event.target.id;
 
+   if(id == "li_sobre"){
+
+     Menu();
+     tempo = setTimeout(Box1,800)
+     tmp = setTimeout(()=>{
+     // selecionar elemento
+     let el = document.getElementById('sobre');
+     // utiliza método
+     let elCoordenadas = el.getBoundingClientRect(); 
+     window.scrollTo(0,elCoordenadas.y);
+    },2200)
+  }
+  else{
+    
    Menu();
-
-   tempo = setTimeout(Box1,800)
-
-   tmp = setTimeout(()=>{
-   // selecionar elemento
-    let el = document.getElementById('sobre');
-    // utiliza método
+     tempo = setTimeout(Box1,800)
+     tmp = setTimeout(()=>{
+    // selecionar elemento
+     let el = document.getElementById('habilidades');
+     // utiliza método
      let elCoordenadas = el.getBoundingClientRect();
 
-  window.scrollTo(0,elCoordenadas.y);
-   },2200)
-
+    window.scrollTo(0,elCoordenadas.y);
+    },2200)
+  }
 }
-
 
 window.addEventListener("load",Inicial);
