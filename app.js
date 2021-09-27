@@ -106,6 +106,16 @@ var bloco6 = {
   descricao:"Esse projeto foi desenvolvido para auxiliar nas tarefas do dia a dia, para melhor organização. A lista de tarefa foi um projeto bacana de desenvolver, pos foi usado nele um armazenamento local, o localStorage, para guardar as tarefas. Esse projeto foi feito com Html, CSS e Javascript! Esse projeto já está responsivo e pronto para utilizar",
 }
 
+
+var link_projetos = 
+["https://calculadorade-imc.netlify.app",
+"https://validadacao-de-formulario.netlify.app",
+"https://conversor-de-temperatura.netlify.app",
+"https://jogo-pedra-papel-e-tesoura.netlify.app/",
+"https://cronometroviajavascript.000webhostapp.com/html/indxe.html ",
+"https://lista-de-tarefas-personalizada.netlify.app"];
+
+
 var cont = 0
 function Menu(){
   if(cont == 0){
@@ -163,7 +173,9 @@ function MostraProjeto(event){
   var h4 = document.createElement('h4');
   var detalhe = document.createElement('h5'); 
   var btn = document.createElement('button');
+  var a = document.createElement("a");
 
+  a.appendChild(btn)
   div_desc.appendChild(h5)
   div_img_desc.appendChild(div_img);
   div_img_desc.appendChild(div_desc);
@@ -171,7 +183,7 @@ function MostraProjeto(event){
   div_tec.appendChild(h4)
 
   div_det.appendChild(detalhe);
-  div_det.appendChild(btn);
+  div_det.appendChild(a);
 
   div_tec_det.appendChild(div_tec)
   div_tec_det.appendChild(div_det)
@@ -195,11 +207,12 @@ function MostraProjeto(event){
   });
  
 
-  h2.innerHTML=Obj_bloco[num_obj-1].nome_projeto;
-  div_img.style.backgroundImage="url(fotos_projetos/projeto"+num_obj+".png)";
-  h5.innerHTML=Obj_bloco[num_obj-1].descricao;
-  detalhe.innerHTML="Para mais detalhes, clique abaixo!"
-  btn.innerHTML="Ver projeto"; 
+  h2.innerHTML = Obj_bloco[num_obj-1].nome_projeto;
+  div_img.style.backgroundImage = "url(fotos_projetos/projeto"+num_obj+".png)";
+  h5.innerHTML = Obj_bloco[num_obj-1].descricao;
+  detalhe.innerHTML = "Para mais detalhes, clique abaixo!"
+  btn.innerHTML = "Ver projeto"; 
+  a.href = link_projetos[num_obj-1]
 
   ChamaProjeto = 1;
  }
@@ -210,13 +223,13 @@ function FecharProjeto(){
   document.getElementById("box-suspenso").style.display="none";  
 }
 
+
 function Inicial(){
   document.body.style.padding="0"
   document.body.style.margin="0"
   document.body.style.width="100%"
   document.body.style.height="100%"
 }
-
 
 
 function Sobre(event){
