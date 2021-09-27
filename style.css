@@ -9,7 +9,10 @@
     --bg-body:rgb(90, 143, 248); 
      
     /*Cor da section inicial*/
-    --bg-box1:#e64e60;
+    --bg-box1:linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%);
+
+    /*background: rgb(9,9,121);
+background: linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%); */
 
      /*Cor onde fica os projetos*/
     --bg-box2:rgb(43, 43, 44);
@@ -46,7 +49,8 @@ html{
 width: 100%;
 height: 657px;
 transition: height 1s ease-in-out;
-background-color:var(--bg-box1);
+background: rgb(9,9,121);
+background: linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%);
 overflow: hidden;
 border-bottom: 1px solid;
 }
@@ -74,12 +78,24 @@ align-items: center;
 #main1 > h2{
 font-size: 3rem;
 margin:0.5rem 0;
+transition: 0.5s;
 }
+
+#main1 > h2:hover{
+transform: scale(0.9);
+}
+
+
 
 #main1 > h4{
     font-size: 1.6rem;
     margin:0.5rem 0;
+    transition: 0.4s ease-in;
 }
+
+#main1 > h4:hover{
+    transform: scale(0.9);
+    }
 
 .middle{
  z-index: 1;
