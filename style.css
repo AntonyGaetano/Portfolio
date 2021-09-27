@@ -31,6 +31,8 @@ body{
 background-color: var(--bg-body);
 }
 
+
+
 html{
     padding: 0;
     margin: 0;
@@ -83,6 +85,10 @@ margin:0.5rem 0;
  z-index: 1;
  cursor: pointer;
 }
+ 
+a{
+text-decoration-color: transparent;
+}
 
 .btn{
     width: 120px;
@@ -108,7 +114,7 @@ margin:0.5rem 0;
 }
 
 
-.butoes > div{
+.butoes > a{
     display: flex;
     margin: 0 0.3rem;
 }
@@ -688,7 +694,7 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .box-habilidade  > div:nth-child(7){
-    
+    background-color: white;
 }
 
 .box-habilidade  > div:nth-child(8){
