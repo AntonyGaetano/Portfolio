@@ -165,8 +165,8 @@ text-decoration-color: transparent;
 #ul{
     display: none;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: end;
+    text-align: end;
     width: 40%;
     gap:1rem;
 }
@@ -174,7 +174,7 @@ text-decoration-color: transparent;
 #ul > li{ 
    font-size: 2rem;
    list-style: none;
-   transition: width 2s;
+   transition: 0.2s;
    border-width: 0px;
    width: max-content;
    margin: auto;
@@ -183,8 +183,8 @@ text-decoration-color: transparent;
 #ul > li:hover{
     cursor: pointer;
     color:white;
-    border-bottom: 1px solid black;
-    border-width: 2px;
+    transform: scale(0.9);
+    filter: drop-shadow(2px 2px 5px black);
 }
 
 i{
@@ -708,6 +708,12 @@ margin-top:-25px;/* e retrocede metade da altura */
     width: 60px;
 }
 
+.box-habilidade > div:hover{
+    transform: scale(0.9);
+box-shadow: 4px 2px 6px black;
+border:2px solid black;
+}
+
 #contato{
     width: 100%;
     height: 230px;
@@ -737,13 +743,17 @@ margin-top:-25px;/* e retrocede metade da altura */
     color:white;
 }
 
-.box-redes > img{
+.box-redes > a > img{
     width: 49px;
+}
+
+.box-redes > a{
+    color: inherit;
 }
 
 .box-redes:hover{
   cursor: pointer;
- filter: drop-shadow(2px 2px 3px rgb(139, 139, 139));
+ filter: drop-shadow(2px 2px 3px rgb(255, 255, 255));
 }
 
 

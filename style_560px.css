@@ -242,6 +242,11 @@ transform: scale(1.5);
     }
 }
 
-
+#ul > li:hover{
+    cursor: pointer;
+    color:white;
+    transform: scale(0.9);
+    filter: drop-shadow(2px 2px 5px black);
+}
  
 

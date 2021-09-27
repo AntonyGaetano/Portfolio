@@ -28,6 +28,7 @@ boxheader.addEventListener('click', ReverseBox1);
 
 document.getElementById("li_sobre").addEventListener("click",Sobre);
 document.getElementById("li_habilidades").addEventListener("click",Sobre);
+document.getElementById("li_contato").addEventListener("click",Sobre);
 
 
 //Função para fazer a transição do Box, após o clique no botão
@@ -247,7 +248,7 @@ function Sobre(event){
      window.scrollTo(0,elCoordenadas.y);
     },2200)
   }
-  else if(id == "li_habilidade"){
+  else if(id == "li_habilidades"){
     
    Menu();
      tempo = setTimeout(Box1,800)
