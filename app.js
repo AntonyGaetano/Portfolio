@@ -247,7 +247,7 @@ function Sobre(event){
      window.scrollTo(0,elCoordenadas.y);
     },2200)
   }
-  else{
+  else if(id == "li_habilidade"){
     
    Menu();
      tempo = setTimeout(Box1,800)
@@ -259,6 +259,20 @@ function Sobre(event){
 
     window.scrollTo(0,elCoordenadas.y);
     },2200)
+  }
+
+  else{
+       
+   Menu();
+   tempo = setTimeout(Box1,800)
+   tmp = setTimeout(()=>{
+  // selecionar elemento
+   let el = document.getElementById('contato');
+   // utiliza método
+   let elCoordenadas = el.getBoundingClientRect();
+
+  window.scrollTo(0,elCoordenadas.y);
+  },2200)
   }
 }
 

@@ -15,7 +15,7 @@
     --bg-box2:rgb(43, 43, 44);
 
      /*Cor da section interio com info do projeto*/
-    --bg-box-interior:rgb(76, 150, 247);
+    --bg-box-interior:rgb(127, 131, 136);
 
       /*Cor da section onde fala sobre mim*/
     --bg-sobre:rgb(43, 43, 44);
@@ -216,11 +216,12 @@ i{
 }
 
 #i_fechar{
+    color:white;
     transition:0.3s;
 }
 
 #i_fechar:hover{
-    color:white;
+    color:black;
 }
 
 #box2{
@@ -390,7 +391,6 @@ z-index: 2;
 position: fixed;
 top: 20%; /* posiciona na metade da tela */
 margin-top:-25px;/* e retrocede metade da altura */
-
 }
 
 .box-interior{
@@ -441,6 +441,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0.7rem 0;
     font-size: 1.2rem;
+    color:white;
 }
 
 
@@ -494,6 +495,7 @@ margin-top:-25px;/* e retrocede metade da altura */
   font-family:sans-serif;
   font-weight: 500;
   margin: 1rem 0;
+  color:white;
 }
 
 .detalhe > a >button{
@@ -708,21 +710,40 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 #contato{
     width: 100%;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 1rem;
-    text-align:center;
+    gap:3rem;
 }
 
-#contato >  h3{
-    font-size: 2rem;
+#contato > h4{
+    font-size: 1.9rem;
+    color:white;
 }
 
-#contato >  h4{
-    font-size: 1.3rem;
-    margin: 0.8rem 0;
+.redes{
+    display: flex;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 1rem;
+}
+
+.box-redes{
+    width: 80px;
+    text-align: center;
+    margin: 0 0.9rem;
+    color:white;
+}
+
+.box-redes > img{
+    width: 49px;
+}
+
+.box-redes:hover{
+  cursor: pointer;
+ filter: drop-shadow(2px 2px 3px rgb(139, 139, 139));
 }
 
 
