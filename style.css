@@ -8,8 +8,10 @@
      /*Cor do body */
     --bg-body:rgb(90, 143, 248); 
      
-    /*Cor da section inicial*/
-    --bg-box1:linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%);
+    /*Cor da section inicial
+    --bg-box1:linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%); */
+
+    
 
     /*background: rgb(9,9,121);
 background: linear-gradient(103deg, rgba(9,9,121,1) 0%, rgba(34,0,255,1) 81%, rgba(2,0,36,1) 100%, rgba(37,66,193,1) 100%); */
@@ -49,8 +51,7 @@ html{
 width: 100%;
 height: 657px;
 transition: height 1s ease-in-out;
-background: rgb(9,9,121);
-background: linear-gradient(103deg, rgb(27, 27, 146) 0%, rgba(34,0,255,1) 81%, rgb(8, 1, 133) 100%, rgba(37,66,193,1) 100%);
+background: linear-gradient(to top, rgb(52, 118, 145) 0%, rgba(34,0,255,1) 81%, rgb(55, 49, 173) 100%, rgb(9, 9, 12) 100%);
 overflow: hidden;
 border-bottom: 1px solid;
 }
@@ -176,6 +177,8 @@ text-decoration-color: transparent;
     display: flex;
     justify-content: right;
     align-items: center;
+    padding-right: 2rem;
+    padding-top: 1.6rem;
 }
 
 #ul{

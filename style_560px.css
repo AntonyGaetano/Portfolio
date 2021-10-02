@@ -54,6 +54,10 @@ html{
     padding: 0;
 }
 
+#box-header{
+    padding: 1rem;
+}
+
 .blocos > div{
     display: flex;
     flex-direction: column;
