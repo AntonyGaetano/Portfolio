@@ -428,7 +428,7 @@ margin-top:-25px;/* e retrocede metade da altura */
   display: flex;
   flex-direction: column;
   border: 1px solid black;
- box-shadow:2px 2px 4px black;
+  box-shadow:2px 2px 4px black;
 }
 
 .descricao{
@@ -659,7 +659,7 @@ margin-top:-25px;/* e retrocede metade da altura */
     background-color: var(--bg-habilidade);
 }
 
-.box-habilidade > div >h4{
+.box-habilidade > div > div >h4{
     margin-top: 1rem;
     color:black
 }
@@ -680,7 +680,17 @@ margin-top:-25px;/* e retrocede metade da altura */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.box-habilidade > div{
+.box-habilidade > div {
+
+    border: 1px solid black;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.box-habilidade > div > div{
     width: 200px;
     height: 200px;
     border: 1px solid black;
@@ -692,50 +702,11 @@ margin-top:-25px;/* e retrocede metade da altura */
     margin: 1rem 1rem;
 }
 
-.box-habilidade  > div:nth-child(1){
-    background-color: rgb(243, 42, 15);
-    color:white
-}
-
-.box-habilidade  > div:nth-child(2){
- background-color: blue; 
- color:white
-}
-
-.box-habilidade  > div:nth-child(3){
-     background-color: rgb(243, 218, 77); 
-     color:white
-}
-
-.box-habilidade  > div:nth-child(4){
-     background-color:rgb(68, 29, 175);
-     color:white;
-}
-
-.box-habilidade  > div:nth-child(5){
-    background-color:rgb(87, 129, 219);
-    color:white;
-}
-
-.box-habilidade  > div:nth-child(6){
-    background-color:rgb(33, 86, 201);
-    color:white;
-}
-
-.box-habilidade  > div:nth-child(7){
-    background-color: white;
-}
-
-.box-habilidade  > div:nth-child(8){
-    background-color:rgb(107, 10, 218);
-    
-}
-
-.box-habilidade > div > img{
+.box-habilidade > div > div > img{
     width: 60px;
 }
 
-.box-habilidade > div:hover{
+.box-habilidade > div > div:hover{
     transform: scale(0.9);
 box-shadow: 4px 2px 6px black;
 border:2px solid black;
