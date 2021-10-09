@@ -282,7 +282,7 @@ i{
 }
 
 .blocos-projetos{
-    width:80%;
+    width:70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -295,12 +295,17 @@ i{
 }
 
 .desc-button{
-
+    width: 470px;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:1rem;
+}
+
+.desc-button > h2{
+    text-align: center;
 }
 
 .desc-button > p{
@@ -312,6 +317,7 @@ i{
     padding: 1rem;
     margin-top: 1.6rem;
 }
+
 
 .projeto2, .projeto4, .projeto6{
     display: flex;
@@ -681,6 +687,7 @@ i{
 progress{
     width: 80%;
     height: 25px;
+    filter: drop-shadow(2px 2px 2px black)
 }
 
 #contato{

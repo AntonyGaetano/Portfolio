@@ -133,79 +133,13 @@ html{
     font-size: 1.3rem;
 }
 
-.box-sobre > h6 {
-    font-size: 1rem;
-    font-family: sans-serif;
-    font-weight: 500;
-    text-align:justify;
+.blocos-projetos{
+    width:85%;
+    gap: 1.4rem;
 }
-
-#habilidades{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.box-habilidade > div{
-    width: 180px;
-    height: 180px;
-    box-shadow: 2px 2px 4px black;
-}
-
-.box-habilidade > div:hover{
-    box-shadow: 2px 2px 6px black;
-    border:2px solid black;
-}
-
-.box-habilidade > div > img{
-   width: 60px;
-}
-
-#habilidades > h4{
-    font-size: 1.4rem;
-}
-
-#box-suspenso{
-    top:9%;
-  }
-
-  #box_interior{
-      width: 84%;
-      padding: 8px 3px;
-  }
-
-  .titulo_icone{
-      display: flex;
-      justify-content: space-between;
-      padding: 7px;
-  }
-
-  .img-descricao{
-     margin-top: 2.5% ;
-     margin-bottom: 0.5%;
-     display: flex;
-     flex-direction: column;
-  }
-
-  .descricao{
-     width: 80%;
-     margin-top: 0.4rem;
-     text-align: justify;
-     font-size: 0.9rem;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
- 
-  .img-info{
-   width: 70%;
-   border: 1px solid;
-  }
-
-  .tecnologia-detalhe{
-      margin:0.4rem 0;
-  }
 
   
-  #main1{
+#main1{
     margin: 0rem 0;
 }
 
