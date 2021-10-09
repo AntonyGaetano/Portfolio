@@ -282,7 +282,7 @@ i{
 }
 
 .blocos-projetos{
-    width: 70%;
+    width:80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -410,52 +410,6 @@ i{
     100% { opacity: 1; }
 }
 
-#box-suspenso{
-display:none;
-width: 100%;
-text-align:center;
-z-index: 2;
-position: fixed;
-top: 20%; /* posiciona na metade da tela */
-margin-top:-25px;/* e retrocede metade da altura */
-}
-
-.box-interior{
-  background-color:var(--bg-box-interior);
-  width: 60%;
-  margin: auto;
-  padding: 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  box-shadow:2px 2px 4px black;
-}
-
-.descricao{
-    width: 50%;
-    text-align: justify;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.img-descricao{
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.img-info{
-    width: 330px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .titulo_icone{
     width: 100%;
     padding: 0 2rem;
@@ -509,24 +463,6 @@ margin-top:-25px;/* e retrocede metade da altura */
 .tecnologia > h4 {
  margin: 0.5rem;
  font-family: Arial, Helvetica, sans-serif;
-}
-
-.detalhe{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.detalhe > h5{
-  font-family:sans-serif;
-  font-weight: 500;
-  margin: 1rem 0;
-  color:white;
-}
-
-.detalhe > a >button{
-    padding: 0.6rem 0.8rem;
 }
 
 #sobre{
@@ -681,8 +617,6 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .box-habilidade > div {
-
-    border: 1px solid black;
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -691,8 +625,8 @@ margin-top:-25px;/* e retrocede metade da altura */
 }
 
 .box-habilidade > div > div{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 1px solid black;
     border-radius: 50%;
     display: flex ;
@@ -708,8 +642,45 @@ margin-top:-25px;/* e retrocede metade da altura */
 
 .box-habilidade > div > div:hover{
     transform: scale(0.9);
-box-shadow: 4px 2px 6px black;
-border:2px solid black;
+    box-shadow: 4px 2px 6px black;
+   border:2px solid black;
+}
+
+.habilidade1 > div{
+   background-color: #F32A0F;
+}
+
+.habilidade2 > div{
+    background-color: #248BC3;
+ }
+
+.habilidade3 > div{
+     background-color: #EAD41C;
+}
+
+.habilidade4 > div{
+    background-color: #441DAF;
+}
+
+.habilidade5 > div{
+    background-color: #2156C9;
+}
+
+.habilidade6 > div{
+    background-color: #5781DB;
+}
+
+.habilidade7 > div{
+    background-color: white;
+}
+
+.habilidade8 > div{
+    background-color: #6B0ADA;
+}
+
+progress{
+    width: 80%;
+    height: 25px;
 }
 
 #contato{
