@@ -52,7 +52,7 @@ width: 100%;
 height: 657px;
 transition: height 1s ease-in-out;
 /*background: linear-gradient(to top, rgb(52, 118, 145) 0%, rgba(34,0,255,1) 81%, rgb(55, 49, 173) 100%, rgb(9, 9, 12) 100%); */
-background-color: rgb(12, 197, 142);
+background-color: rgb(12, 92, 197);
 overflow: hidden;
 border-bottom: 1px solid;
 }
@@ -315,6 +315,13 @@ i{
 .desc-button > a > button{
     padding: 1rem;
     margin-top: 1.6rem;
+    border: 1px solid inherit;
+}
+
+.desc-button > a > button:hover{
+    background-color: rgb(119, 119, 119);
+    color:white;
+    border: 1px solid white;
 }
 
 
