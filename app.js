@@ -36,7 +36,7 @@ function Box1(){
   document.body.style.width=""
   document.body.style.height=""
 
-  box1.style.height="57px";  
+  box1.style.height="53px";  
   ul.style.display="none"; 
   icone_sobe_header.style.display="none"
   tmp = setTimeout(
