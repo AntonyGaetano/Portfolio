@@ -318,7 +318,7 @@ i{
 }
 
 
-.projeto2, .projeto4, .projeto6{
+.projeto2, .projeto4, .projeto6, .projeto8{
     display: flex;
     flex-direction: row-reverse;
     background-color: rgb(224, 135, 52);
@@ -379,6 +379,36 @@ i{
     width: 250px;
     height: 150px;
     background-image: url(fotos_projetos/projeto6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 6px black;
+}
+
+#img-projeto7{
+    width: 250px;
+    height: 150px;
+    background-image: url(fotos_projetos/projeto7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 6px black;
+}
+
+#img-projeto8{
+    width: 250px;
+    height: 150px;
+    background-image: url(fotos_projetos/projeto8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 6px black;
+}
+
+#img-projeto9{
+    width: 250px;
+    height: 150px;
+    background-image: url(fotos_projetos/projeto9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -696,7 +726,7 @@ progress{
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
 }
 
 #cursos > h2{

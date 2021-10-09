@@ -29,23 +29,25 @@ document.getElementById("li_habilidades").addEventListener("click",Sobre); //Aqu
 document.getElementById("li_contato").addEventListener("click",Sobre); //Aqui é o li contato do menu
 
 
+
+
 //Função para fazer a transição do Box, após o clique no botão ver projetos
 function Box1(){
-  document.body.style.padding="none"
-  document.body.style.margin="none"
-  document.body.style.width=""
-  document.body.style.height=""
+    document.body.style.padding="none"
+    document.body.style.margin="none"
+    document.body.style.width=""
+    document.body.style.height=""
 
-  box1.style.height="53px";  
-  ul.style.display="none"; 
-  icone_sobe_header.style.display="none"
-  tmp = setTimeout(
-    ()=>{
-       boxheader.style.justifyContent="center";
-       icone_menu.style.display="none";
-       icone_arrow.style.display="inline-block";
-       box2.style.display="flex"; 
-    },900);
+    box1.style.height="53px";  
+    ul.style.display="none"; 
+    icone_sobe_header.style.display="none"
+    tmp = setTimeout(
+      ()=>{
+         boxheader.style.justifyContent="center";
+         icone_menu.style.display="none";
+         icone_arrow.style.display="inline-block";
+         box2.style.display="flex"; 
+      },900);
 }
 
 
@@ -97,15 +99,15 @@ function Sobre(event){
 
    if(id == "li_sobre"){
 
-      Menu();
-      tempo = setTimeout(Box1,800)
-      tmp = setTimeout(()=>{
-       // selecionar elemento
-         let el = document.getElementById('sobre');
-       // utiliza método
-         let elCoordenadas = el.getBoundingClientRect(); 
-         window.scrollTo(0,elCoordenadas.y);
-      },2200)
+       Menu();
+       tempo = setTimeout(Box1,800)
+       tmp = setTimeout(()=>{
+        // selecionar elemento
+          let el = document.getElementById('sobre');
+        // utiliza método
+          let elCoordenadas = el.getBoundingClientRect(); 
+          window.scrollTo(0,elCoordenadas.y);
+       },2200)
 
    }else if(id == "li_habilidades"){
     
@@ -122,25 +124,25 @@ function Sobre(event){
 
   }else{
        
-     Menu();
-     tempo = setTimeout(Box1,800)
-     tmp = setTimeout(()=>{
-     // selecionar elemento
-     let el = document.getElementById('contato');
-     // utiliza método
-     let elCoordenadas = el.getBoundingClientRect();
+      Menu();
+      tempo = setTimeout(Box1,800)
+      tmp = setTimeout(()=>{
+      // selecionar elemento
+      let el = document.getElementById('contato');
+      // utiliza método
+      let elCoordenadas = el.getBoundingClientRect();
 
-     window.scrollTo(0,elCoordenadas.y);
-  },2200)
+      window.scrollTo(0,elCoordenadas.y);
+    },2200)
   }
 }
 
 
 function Inicial(){
-  document.body.style.padding="0"
-  document.body.style.margin="0"
-  document.body.style.width="100%"
-  document.body.style.height="100%"
+    document.body.style.padding="0"
+    document.body.style.margin="0"
+    document.body.style.width="100%"
+    document.body.style.height="100%"
 }
 
  
