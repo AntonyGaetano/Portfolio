@@ -718,6 +718,11 @@ progress{
     gap:0.5rem;
     margin: 1rem  1rem;
     color:white;
+    background-color: rgb(57, 58, 58);
+}
+
+.blocos-cursos a{
+    color:inherit;
 }
 
 #cursos > div > div > img{
