@@ -148,46 +148,7 @@ function Inicial(){
  
 window.addEventListener("load",Inicial);
 
-
-
-//Criação do objeto com as informações do projeto1
 /*
-var bloco1 = {
-  num_projeto:"Projeto 1",
-  nome_projeto:"Calculadora De IMC",
-  descricao:"Esse projeto foi desenvolvido para calcular o indice de massa corporal. Foi usado as seguintes tecnologias no processo: HTML, CSS, JAVASCRIPT. O projeto já está responsivo e pronto para uso!",
-}
-
-var bloco2 = {
-  num_projeto:"Projeto 2",
-  nome_projeto:"Validando Formulário",
-  descricao:"Esse projeto foi feito para validar formulário , sabemos que a validação pode ser feito atráves do html por si, mas resolvi mostrar um pouco da habilidade em JS e fiz o processo da validação com script. Nesse projeto foi usado Html para marcação, Css para estilização e Javascript para validação. Esse projeto já está responsivo!",
-}
-
-var bloco3 = {
-  num_projeto:"Projeto 3",
-  nome_projeto:"Conversor de Temperatura",
-  descricao:"Esse projeto é uma calculadora que  transforma um valor em celsius em fahrenheit ou celsius em kelvin. É um projeto bastante legal e interativo. Foi usado HTML, CSS e JAVASCRIPT como tecnologias. O projeto já está responsivo e pronto para uso!",
-}
-
-var bloco4 = {
-  num_projeto:"Projeto 4",
-  nome_projeto:"Jogo Pedra, Papel e Tesoura",
-  descricao:"Esse projeto foi a criação de um jogo chamado Pedra, Papel e Tesoura. Um projeto bastante interativo e divertido. Foi usado o Html para marcação, Css para estilizar, e o Javascript para fazer todo o restante, como por exemplo a logica do jogo. Esse projeto já está responsivo e pronto para jogar!",
-}
-
-var bloco5 = {
-  num_projeto:"Projeto 5",
-  nome_projeto:"Cronômetro",
-  descricao:"Esse projeto é simples, mas só quem já fez sabe o quão pode quebrar um pouco a cabeça, pois precisa de um pouco de lógica de programção e conhecimento para se usar. Foi desenvolvido para auxiliar em alguma tarefa com tempo marcado. As Tecnologias usadas foi Html, Css e Javascript! Esse projeto já está responsivo e para se utilizar!",
-}
-
-var bloco6 = {
-  num_projeto:"Projeto 6",
-  nome_projeto:"Lista De Tarefas",
-  descricao:"Esse projeto foi desenvolvido para auxiliar nas tarefas do dia a dia, para melhor organização. A lista de tarefa foi um projeto bacana de desenvolver, pos foi usado nele um armazenamento local, o localStorage, para guardar as tarefas. Esse projeto foi feito com Html, CSS e Javascript! Esse projeto já está responsivo e pronto para utilizar",
-}
-
 
 var link_projetos = 
 ["https://calculadorade-imc.netlify.app",
